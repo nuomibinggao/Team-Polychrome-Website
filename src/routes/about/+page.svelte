@@ -45,14 +45,39 @@
   </div>
   <div class='members-grid'>
     <div class='member-card'>
-      <img src='images/members-avatars/nuomibinggao.png' alt='nuomibinggao' class='member-avatar'>
+      <img src='images/member-avatars/nuomibinggao.png' alt='nuomibinggao' class='member-avatar'>
       <h3>nuomibinggao</h3>
       <p class='roles'>Charter & Playtester</p>
     </div>
     <div class='member-card'>
-      <img src='images/members-avatars/MLob_302.png' alt='MLob_302' class='member-avatar'>
+      <img src='images/member-avatars/MLob_302.png' alt='MLob_302' class='member-avatar'>
       <h3>MLob_302</h3>
-      <p class='roles'>Charter & Light Camera FX / VFX Creator</p>
+      <p class='roles'>Charter & Light VFX Creator</p>
+    </div>
+    <div class='member-card'>
+      <img src='images/member-avatars/BrAme.png' alt='BrAme' class='member-avatar'>
+      <h3>BrAme</h3>
+      <p class='roles'>Charter & Light VFX Creator & Original Music Producer</p>
+    </div>
+    <div class='member-card'>
+      <img src='images/member-avatars/MingZi.png' alt='MingZi' class='member-avatar'>
+      <h3>MingZi</h3>
+      <p class='roles'>Charter</p>
+    </div>
+    <div class='member-card'>
+      <img src='images/member-avatars/llllaio.png' alt='llllaio' class='member-avatar'>
+      <h3>llllaio</h3>
+      <p class='roles'>VFX Creator</p>
+    </div>
+    <div class='member-card'>
+      <img src='images/member-avatars/Larus_.png' alt='Larus_' class='member-avatar'>
+      <h3>Larus_</h3>
+      <p class='roles'>VFX Creator</p>
+    </div>
+    <div class='member-card'>
+      <img src='images/member-avatars/PoFic.png' alt='PoFic' class='member-avatar'>
+      <h3>PoFic</h3>
+      <p class='roles'>VFX Creator</p>
     </div>
   </div>
 </section>
