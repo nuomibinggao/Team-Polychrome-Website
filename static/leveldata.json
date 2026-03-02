@@ -5,6 +5,7 @@
     "artist-link": "https://www.frums.xyz",
     "title": "swallow SMOKE",
     "release-date": "Apr., 2026",
+    "special-tag": null,
     "demo-video-id": ["No VFX", "BV1MhFpzhEfe"],
     "song-link": ["Bandcamp", "https://frums.bandcamp.com/track/swallow-smoke-2"],
     "charters":
@@ -31,7 +32,8 @@
     "artist": ["Yukira", "ゆきら"],
     "artist-link": "https://space.bilibili.com/407240774",
     "title": "Pure White Wings",
-    "release-date": "Late 2026",
+    "release-date": "Q3, 2026",
+    "special-tag": "Original",
     "demo-video-id": null,
     "song-link": null,
     "charters":
@@ -40,7 +42,9 @@
         {"name": ["Mono_", "MLob_302"], "link": "https://space.bilibili.com/1125672122"}
       ],
     "vfxers":
-      [],
+      [
+        {"name": "BUGJI", "link": "https://space.bilibili.com/1057790493"}
+      ],
     "tile-count": null,
     "bpm": 185,
     "tuf-id": null,
