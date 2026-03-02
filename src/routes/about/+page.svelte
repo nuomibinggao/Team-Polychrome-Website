@@ -41,7 +41,7 @@
     <div class='member-card'>
       <img src='images/nuomibinggao.png' alt='nuomibinggao' class='member-avatar'>
       <h3>nuomibinggao</h3>
-      <p class='roles'>Charter</p>
+      <p class='roles'>Charter & Playtester</p>
     </div>
     <div class='member-card'>
       <img src='images/MLob_302.png' alt='MLob_302' class='member-avatar'>

@@ -34,6 +34,15 @@
   </div>
 </section>
 
+<section class='website-info'>
+  <div class='content'>
+    <h2>Website Information</h2>
+    <p>This website was created by team member <strong>nuomibinggao</strong> with the help of AI/LLM tools. 
+      It uses <a href='https://svelte.dev' rel='noopener noreferrer' target='_blank'>SvelteKit</a> as its framework.
+    </p>
+  </div>
+</section>
+
 <footer>
   &copy; 2026 nuomibinggao & Team Polychrome. All rights reserved.
   <div class='footer-splash'>Even errors can look good.</div>
