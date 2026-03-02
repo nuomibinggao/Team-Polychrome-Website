@@ -1,6 +1,15 @@
-<h1>Team Polychrome
-  <p class='subtitle'>An ADOFAI Map-Making Community Team</p>
+<h1>
+  <img src='images/placeholder.png' alt="Team Polychrome Logo" class='team-logo'>
+  An ADOFAI Map-Making Community Team
 </h1>
+
+<nav>
+  <ul>
+    <li><a href='/about'>About Us</a></li>
+    <li><a href='/#'>Levels</a></li>
+    <li><a href='/#'>Newsletter</a></li>
+  </ul>
+</nav>
 
 <section class='about'>
   <div class='content'>
@@ -16,7 +25,7 @@
 
 <section class='projects'>
   <div class='content'>
-    <h2>Our Projects</h2>
+    <h2>Our Levels</h2>
     <p>Check out our works listed below.</p>
   </div>
   <div class='links'>

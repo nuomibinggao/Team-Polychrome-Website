@@ -1,6 +1,14 @@
-<h1>Team Polychrome
-  <p class='subtitle'>About Us</p>
+<h1>
+  <img src='images/placeholder.png' alt="Team Polychrome Logo" class='team-logo'>
+  About Us
 </h1>
+
+<nav>
+  <ul>
+    <li><a href='/#'>Levels List</a></li>
+    <li><a href='/'>Back to Home</a></li>
+  </ul>
+</nav>
 
 <section class='intro'>
   <div class='content'>
@@ -9,9 +17,6 @@
     <ul>
       <li>
         <a href='https://space.bilibili.com/3546710827600010' rel='noopener noreferrer' target='_blank'>Our Channel</a>
-      </li>
-      <li>
-        <a href='/#'>Levels List</a>
       </li>
       <li>
         <a href='https://tuforums.com' rel='noopener noreferrer' target='_blank'>The Universal Forums (TUF)</a>
@@ -25,6 +30,7 @@
     </ul>
   </div>
   <div class='nav-buttons'>
+    <a href='/#'>Levels List</a>
     <a href='/'>Back to Home</a>
   </div>
 </section>
