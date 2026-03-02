@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "artist": "Frums",
+  "artist-link": "https://www.frums.xyz",
+  "title": "swallow SMOKE",
+  "release-date": "Apr., 2026",
+  "demo-video-id": "BV1MhFpzhEfe",
+  "song-link": ["Bandcamp", "https://frums.bandcamp.com/track/swallow-smoke-2"],
+  "charters":
+    [
+      {"name": ["MingZi", "暂无名字233"], "link": "https://space.bilibili.com/480281552"},
+      {"name": ["Mono_", "MLob_302"], "link": "https://space.bilibili.com/1125672122"},
+      {"name": ["こおりん", "nuomibinggao"], "link": "https://space.bilibili.com/1223643343"}
+    ],
+  "vfxers":
+    [
+      {"name": ["llllaio", "我是llllaio"], "link": "https://space.bilibili.com/3546624443812737"},
+      {"name": "PoFiC", "link": "https://space.bilibili.com/640530603"},
+      {"name": ["Larus_", "LaRus__"], "link": "https://space.bilibili.com/1176118653"}
+    ],
+  "tile-count": 3497,
+  "bpm": 234.375,
+  "tuf-id": 12226,
+  "tuf-ofc-diff": "Q3",
+  "tuf-manager-diff": "U13"
+}
