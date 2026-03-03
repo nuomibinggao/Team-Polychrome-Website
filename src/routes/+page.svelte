@@ -73,10 +73,12 @@
     <p>This website was created by team member <strong>nuomibinggao</strong> with the help of AI/LLM tools. 
       It uses <a href='https://svelte.dev' rel='noopener noreferrer' target='_blank' class='inline-link'>SvelteKit</a> as its framework.
     </p>
+    <p>The source code is available on <a href='https://github.com/nuomibinggao/Team-Polychrome-Website' rel='noopener noreferrer' target='_blank' class='inline-link'>GitHub</a>, 
+      however, it is licensed under the <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en' rel='noopener noreferrer' target='_blank' class='inline-link'>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
   </div>
 </section>
 
 <footer>
-  &copy; 2026 nuomibinggao & Team Polychrome. All rights reserved.
+  &copy; 2026 nuomibinggao & Team Polychrome. Licensed Under CC BY-NC-ND 4.0.
   <div class='footer-splash'>Even errors can look good.</div>
 </footer>

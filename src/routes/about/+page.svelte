@@ -2,12 +2,14 @@
   <img src='images/placeholder.png' alt="Team Polychrome Logo" class='team-logo'>
   About Us
 </h1>
+
 <nav>
   <ul>
     <li><a href='/#'>Levels List</a></li>
     <li><a href='/'>Back to Home</a></li>
   </ul>
 </nav>
+
 <section class='intro'>
   <div class='content'>
     <p>Information about our team and its members.</p>
@@ -25,6 +27,7 @@
     </ul>
   </div>
 </section>
+
 <section class='about'>
   <div class='content'>
     <h2>Brief</h2>
@@ -33,6 +36,7 @@
     </p>
   </div>
 </section>
+
 <section class='members'>
   <h2>Members</h2>
   <div class='members-grid'>
@@ -80,7 +84,8 @@
     </div>
   </div>
 </section>
+
 <footer>
-  &copy; 2026 nuomibinggao & Team Polychrome. All rights reserved.
+  &copy; 2026 nuomibinggao & Team Polychrome. Licensed Under CC BY-NC-ND 4.0.
   <div class='footer-splash'>Even errors can look good.</div>
 </footer>
