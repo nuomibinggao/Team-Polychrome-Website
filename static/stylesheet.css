@@ -1,0 +1,454 @@
+/* Chillax font styles */
+@font-face {
+  font-family: 'Chillax';
+  src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-variable.woff2') format('woff2');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chillax';
+  src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-extralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chillax';
+  src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chillax';
+  src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chillax';
+  src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chillax';
+  src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chillax';
+  src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Variables ─────────────────────────────────────────────────────────────── */
+:root {
+  --white:        #ffffff;
+  --off-white:    #f7f5fb;
+  --surface:      #f0ecf8;
+  --border:       #e2d9f3;
+  --purple-light: #c4a8e8;
+  --purple:       #6b21a8;
+  --purple-mid:   #7c3aed;
+  --purple-deep:  #3b0764;
+  --text:         #1a1026;
+  --text-muted:   #6b5f7a;
+  --shadow:       0 2px 16px rgba(107,33,168,0.08);
+  --shadow-card:  0 4px 24px rgba(107,33,168,0.12);
+  --radius:       12px;
+  --radius-lg:    20px;
+}
+
+/* ── Reset & Base ───────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Chillax', sans-serif;
+  background-color: var(--off-white);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Decorative background ──────────────────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 80% 10%, rgba(196,168,232,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 10% 80%, rgba(124,58,237,0.08) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+main, section, nav, footer, h1 { position: relative; z-index: 1; }
+
+/* ── Typography ─────────────────────────────────────────────────────────────── */
+h1, h2, h3 {
+  font-family: 'Chillax', sans-serif;
+  color: var(--purple-deep);
+  line-height: 1.2;
+}
+
+/* All <a> outside <nav> rendered as pill buttons */
+a:not(nav a) {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--surface);
+  color: var(--purple);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+a:not(nav a):hover {
+  background: var(--purple);
+  color: var(--white);
+  border-color: var(--purple);
+  box-shadow: 0 4px 14px rgba(107,33,168,0.25);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* Nav links stay as plain text tabs */
+nav a {
+  all: unset;
+  display: block;
+  padding: 14px 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  cursor: pointer;
+  font-family: 'Chillax', sans-serif;
+}
+
+nav a:hover {
+  color: var(--purple);
+  border-bottom-color: var(--purple);
+}
+
+strong { color: var(--purple-deep); font-weight: 600; }
+
+a.inline-link,
+a.inline-link:hover {
+  all: unset;
+  cursor: pointer;
+}
+a.inline-link {
+  color: var(--purple-mid);
+  font-weight: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a.inline-link:hover {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+/* ── Page Header (h1 + logo) ────────────────────────────────────────────────── */
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  /* The text node inside h1 is the subtitle */
+  font-size: clamp(0.8rem, 1.4vw, 0.95rem);
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 40px 64px 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+
+/* Logo = fancy display title: no bounding box, renders like styled text */
+.team-logo {
+  width: auto;
+  height: 64px;
+  display: block;
+  object-fit: contain;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+
+/* ── Top Nav ────────────────────────────────────────────────────────────────── */
+nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 0 64px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0;
+}
+
+/* nav link styles are defined globally under Typography above */
+
+/* ── Sections shared ────────────────────────────────────────────────────────── */
+section {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 56px 64px;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+/* ── Intro section ──────────────────────────────────────────────────────────── */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 96px;
+  margin-top: 24px;
+}
+
+.intro .content p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.intro .content h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--purple);
+  margin-bottom: 12px;
+  font-family: 'Chillax', sans-serif;
+  font-weight: 500;
+}
+
+.intro .content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* intro links use the global button style */
+
+/* Nav buttons (duplicated nav in intro) */
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* .nav-buttons links use the global button style */
+
+/* ── Section inner layout (content + links) ─────────────────────────────────── */
+section h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--purple), transparent);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+section p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+section .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+/* ── Members Grid ───────────────────────────────────────────────────────────── */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.member-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 16px 22px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.member-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(196,168,232,0.12) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--purple-light);
+}
+.member-card:hover::before { opacity: 1; }
+
+.member-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  margin-bottom: 14px;
+  transition: border-color 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.member-card:hover .member-avatar {
+  border-color: var(--purple-light);
+}
+
+.member-card h3 {
+  font-family: 'Chillax', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--purple-deep);
+  margin-bottom: 6px;
+  word-break: break-all;
+}
+
+.member-card .roles {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────────── */
+footer {
+  margin-top: auto;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 32px 64px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-splash {
+  font-family: 'Chillax', sans-serif;
+  font-style: italic;
+  color: var(--purple-light);
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  h1 { padding: 32px 24px 20px; }
+  nav { padding: 0 24px; }
+  section { padding: 40px 24px; }
+
+  .intro {
+    flex-direction: column;
+    gap: 28px;
+    padding: 32px 28px;
+    margin-top: 24px;
+  }
+
+  .nav-buttons { flex-direction: row; }
+  .nav-buttons a { flex: 1; }
+
+  .members-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 14px;
+  }
+
+  footer {
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .members-grid { grid-template-columns: repeat(2, 1fr); }
+  nav a { padding: 12px 12px; font-size: 0.8rem; }
+}
+
+/* ── Fade-in animation ──────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+h1         { animation: fadeUp 0.5s ease both; }
+nav        { animation: fadeUp 0.5s 0.08s ease both; }
+
+section { animation: fadeUp 0.5s ease both; }
+section:nth-of-type(1) { animation-delay: 0.16s; }
+section:nth-of-type(2) { animation-delay: 0.24s; }
+section:nth-of-type(3) { animation-delay: 0.32s; }
+section:nth-of-type(4) { animation-delay: 0.40s; }
+section:nth-of-type(5) { animation-delay: 0.48s; }
+
+.member-card {
+  animation: fadeUp 0.4s ease both;
+}
+.member-card:nth-child(1) { animation-delay: 0.28s; }
+.member-card:nth-child(2) { animation-delay: 0.33s; }
+.member-card:nth-child(3) { animation-delay: 0.38s; }
+.member-card:nth-child(4) { animation-delay: 0.43s; }
+.member-card:nth-child(5) { animation-delay: 0.48s; }
+.member-card:nth-child(6) { animation-delay: 0.53s; }
+.member-card:nth-child(7) { animation-delay: 0.58s; }

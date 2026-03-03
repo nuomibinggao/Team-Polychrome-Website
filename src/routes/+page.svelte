@@ -47,7 +47,7 @@
   <div class='content'>
     <h2>Website Information</h2>
     <p>This website was created by team member <strong>nuomibinggao</strong> with the help of AI/LLM tools. 
-      It uses <a href='https://svelte.dev' rel='noopener noreferrer' target='_blank'>SvelteKit</a> as its framework.
+      It uses <a href='https://svelte.dev' rel='noopener noreferrer' target='_blank' class='inline-link'>SvelteKit</a> as its framework.
     </p>
   </div>
 </section>

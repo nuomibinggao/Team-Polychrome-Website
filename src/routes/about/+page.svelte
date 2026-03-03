@@ -12,7 +12,7 @@
 
 <section class='intro'>
   <div class='content'>
-    <p>Information about our team and its brief history.</p>
+    <p>Information about our team and its members.</p>
     <h3>Useful Links</h3>
     <ul>
       <li>
@@ -24,21 +24,14 @@
       <li>
         <a href='/#'>Join Us</a>
       </li>
-      <li>
-        <a href='https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice' rel='noopener noreferrer' target='_blank'>ADOFAI on Steam</a>
-      </li>
     </ul>
-  </div>
-  <div class='nav-buttons'>
-    <a href='/#'>Levels List</a>
-    <a href='/'>Back to Home</a>
   </div>
 </section>
 
 <section class='about'>
   <div class='content'>
     <h2>Brief</h2>
-    <p>Founded in January 8, 2025 by charters <strong>nuomibinggao</strong> and <strong>MLob_302</strong>, Team Polychrome is a community of map-makers for <a href='https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice' rel='noopener noreferrer' target='_blank'>ADOFAI (A Dance of Fire and Ice)</a>. 
+    <p>Founded in January 8, 2025 by charters <strong>nuomibinggao</strong> and <strong>MLob_302</strong>, Team Polychrome is a community of map-makers for <a href='https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice' rel='noopener noreferrer' target='_blank' class='inline-link'>ADOFAI (A Dance of Fire and Ice)</a>. 
       We create and share levels, collaborate on projects, and support each other in our creative endeavors.
     </p>
     <h2>Members</h2>
