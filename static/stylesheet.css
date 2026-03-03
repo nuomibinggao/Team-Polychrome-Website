@@ -97,6 +97,8 @@ body::before {
 
 main, section, nav, footer, h1 { position: relative; z-index: 1; }
 
+h1, nav { width: 100%; }
+
 /* ── Typography ─────────────────────────────────────────────────────────────── */
 h1, h2, h3 {
   font-family: 'Chillax', sans-serif;

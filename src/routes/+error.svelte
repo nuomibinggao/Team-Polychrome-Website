@@ -2,45 +2,42 @@
   <title>Team Polychrome | Error 404 - Page Not Found</title>
 </svelte:head>
 
-<div class="track">
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile missed"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile missed"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-  <div class="tile"></div>
-</div>
-
-<div class="card">
-  <span class="badge">Miss ✕</span>
-
-  <div class="error-number">404</div>
-
-  <div class="divider"></div>
-
-  <h1>You missed a beat.</h1>
-  <p>This page doesn't exist — looks like it got off-track somewhere.<br>Let's get you back in rhythm.</p>
-
-  <div class="buttons">
-    <a href="/" class="btn">Back to Home</a>
+<div class='page'>
+  <div class='track'>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile missed'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile missed'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
   </div>
 
-  <div class="foot-note">Even errors can look good.</div>
+  <div class='card'>
+    <span class='badge'>Miss ✕</span>
+    <div class='error-number'>404</div>
+    <div class='divider'></div>
+    <h1>You missed a beat.</h1>
+    <p>This page doesn't exist — looks like it got off-track somewhere.<br>Let's get you back in rhythm.</p>
+    <div class='buttons'>
+      <button on:click={() => history.back()} class='btn'>Back to Last Page</button>
+      <a href='/' class='btn'>Back to Home</a>
+    </div>
+    <div class='foot-note'>Even errors can look good.</div>
+  </div>
 </div>
 
 <style>
-  /* ── Page layout ── */
-  :global(body) {
+  .page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -50,20 +47,20 @@
     position: relative;
   }
 
-  :global(body::before), :global(body::after) {
+  .page::before, .page::after {
     content: '';
     position: fixed;
     border-radius: 50%;
     pointer-events: none;
     z-index: 0;
   }
-  :global(body::before) {
+  .page::before {
     width: 600px; height: 600px;
     top: -200px; right: -150px;
     background: radial-gradient(circle, rgba(196,168,232,0.22) 0%, transparent 70%);
     animation: blobDrift 8s ease-in-out infinite alternate;
   }
-  :global(body::after) {
+  .page::after {
     width: 400px; height: 400px;
     bottom: -100px; left: -100px;
     background: radial-gradient(circle, rgba(124,58,237,0.1) 0%, transparent 70%);
@@ -75,7 +72,7 @@
     to   { transform: translate(30px, 20px) scale(1.05); }
   }
 
-  /* ── Beat track ── */
+  /* rest of styles unchanged below... */
   .track {
     position: fixed;
     bottom: 48px;
@@ -112,7 +109,6 @@
     100% { transform: scale(1);    box-shadow: 0 0 0 0 rgba(124,58,237,0); }
   }
 
-  /* ── Card ── */
   .card {
     position: relative;
     z-index: 1;
@@ -132,7 +128,6 @@
     to   { opacity: 1; transform: translateY(0) scale(1); }
   }
 
-  /* ── 404 glitch ── */
   .error-number {
     font-size: clamp(5rem, 18vw, 9rem);
     font-weight: 700;
@@ -181,7 +176,6 @@
     97%            { transform: translate(0); opacity: 0; }
   }
 
-  /* ── Badge ── */
   .badge {
     display: inline-block;
     background: var(--surface);
@@ -197,7 +191,6 @@
     animation: cardIn 0.7s 0.1s cubic-bezier(0.22,1,0.36,1) both;
   }
 
-  /* ── Text ── */
   h1 {
     font-size: clamp(1.4rem, 4vw, 2rem);
     font-weight: 700;
@@ -215,7 +208,6 @@
     animation: cardIn 0.7s 0.2s cubic-bezier(0.22,1,0.36,1) both;
   }
 
-  /* ── Divider ── */
   .divider {
     width: 48px;
     height: 3px;
@@ -225,7 +217,6 @@
     animation: cardIn 0.7s 0.12s both;
   }
 
-  /* ── Buttons ── */
   .buttons {
     display: flex;
     align-items: center;
@@ -259,7 +250,6 @@
   }
   .btn:active { transform: translateY(0); }
 
-  /* ── Footer note ── */
   .foot-note {
     margin-top: 32px;
     font-size: 0.78rem;
@@ -268,7 +258,6 @@
     animation: cardIn 0.7s 0.38s both;
   }
 
-  /* ── Responsive ── */
   @media (max-width: 480px) {
     .card { padding: 48px 28px 40px; }
     .buttons { flex-direction: column; }
