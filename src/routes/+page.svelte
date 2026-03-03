@@ -24,7 +24,6 @@
     <h3>To-Do</h3>
     <ul>
       <li>Add <code>zh-cn</code> & <code>zh-hk</code> translations</li>
-      <li>Add links for members list</li>
     </ul>
   </div>
 </section>

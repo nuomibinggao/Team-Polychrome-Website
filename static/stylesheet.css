@@ -105,7 +105,7 @@ h1, h2, h3 {
 }
 
 /* All <a> outside <nav> rendered as pill buttons */
-a:not(nav a) {
+a:not(nav a):not(.inline-link):not(.card-link) {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -122,7 +122,7 @@ a:not(nav a) {
   white-space: nowrap;
 }
 
-a:not(nav a):hover {
+a:not(nav a):not(.inline-link):not(.card-link):hover {
   background: var(--purple);
   color: var(--white);
   border-color: var(--purple);
@@ -311,6 +311,7 @@ section .links + .content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
+  align-items: start;
 }
 
 .member-card {
@@ -318,6 +319,7 @@ section .links + .content {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px 16px 22px;
+  min-height: 220px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   position: relative;
@@ -339,6 +341,16 @@ section .links + .content {
   border-color: var(--purple-light);
 }
 .member-card:hover::before { opacity: 1; }
+
+/* Full-card clickable overlay */
+a.card-link {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 1;
+  cursor: pointer;
+}
 
 .member-avatar {
   width: 72px;
