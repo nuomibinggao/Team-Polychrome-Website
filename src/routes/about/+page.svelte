@@ -10,18 +10,6 @@
   </ul>
 </nav>
 
-<section class='warning'>
-  <div class='content'>
-    <h2>Page Under Construction</h2>
-    <p>This page is currently under construction. Please check back later for updates.</p>
-    <h3>Current Unfinished Pages</h3>
-    <ul>
-      <li><a href='/#'>Levels List</a></li>
-      <li><a href='/#'>Tools & Resources</a></li>
-      <li><a href='/#'>Newsletter</a></li>
-    </ul>
-  </div>
-</section>
 <section class='intro'>
   <div class='content'>
     <p>Information about our team and its members.</p>

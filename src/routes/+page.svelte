@@ -11,6 +11,24 @@
   </ul>
 </nav>
 
+<section class='warning'>
+  <div class='content'>
+    <h2>Page Under Construction</h2>
+    <strong><p>This page is currently under construction. Please check back later for updates.</p></strong>
+    <h3>Current Unfinished Pages</h3>
+    <ul>
+      <li>Levels List</li>
+      <li>Tools & Resources</li>
+      <li>Newsletter</li>
+    </ul>
+    <h3>To-Do</h3>
+    <ul>
+      <li>Add <code>zh-cn</code> & <code>zh-hk</code> translations</li>
+      <li>Add links for members list</li>
+    </ul>
+  </div>
+</section>
+
 <section class='about'>
   <div class='content'>
     <h2>About Us</h2>
