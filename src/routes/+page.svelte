@@ -51,7 +51,7 @@
   </div>
   <div class='content'>
     <h2>Tools & Resources</h2>
-    <p>Explore the tools and resources we've created for the ADOFAI community.</p>
+    <p>Explore the tools and resources our team members created for the ADOFAI community.</p>
   </div>
   <div class='links'>
     <a href='/#'>View Tools & Resources</a>
