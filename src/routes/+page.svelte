@@ -17,7 +17,7 @@
     <p>Information about our team and its members.</p>
   </div>
   <div class='links'>
-    <a href='/about'>About Us</a>
+    <a href='/about'>View About Us</a>
     <a href='https://space.bilibili.com/3546710827600010' rel='noopener noreferrer' target='_blank'>Our Channel</a>
     <a href='/#'>Join Us</a>
   </div>
@@ -26,10 +26,17 @@
 <section class='projects'>
   <div class='content'>
     <h2>Our Levels</h2>
-    <p>Check out our works listed below.</p>
+    <p>Check out our levels listed below.</p>
   </div>
   <div class='links'>
     <a href='/#'>Levels List</a>
+  </div>
+  <div class='content'>
+    <h2>Tools & Resources</h2>
+    <p>Explore the tools and resources we've created for the ADOFAI community.</p>
+  </div>
+  <div class='links'>
+    <a href='/#'>View Tools & Resources</a>
   </div>
 </section>
 

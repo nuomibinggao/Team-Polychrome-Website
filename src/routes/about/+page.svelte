@@ -34,8 +34,11 @@
     <p>Founded in January 8, 2025 by charters <strong>nuomibinggao</strong> and <strong>MLob_302</strong>, Team Polychrome is a community of map-makers for <a href='https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice' rel='noopener noreferrer' target='_blank' class='inline-link'>ADOFAI (A Dance of Fire and Ice)</a>. 
       We create and share levels, collaborate on projects, and support each other in our creative endeavors.
     </p>
-    <h2>Members</h2>
   </div>
+</section>
+
+<section class='members'>
+  <h2>Members</h2>
   <div class='members-grid'>
     <div class='member-card'>
       <img src='images/member-avatars/nuomibinggao.png' alt='nuomibinggao' class='member-avatar'>

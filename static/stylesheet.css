@@ -302,6 +302,10 @@ section .links {
   margin-top: 28px;
 }
 
+section .links + .content {
+  margin-top: 40px;
+}
+
 /* ── Members Grid ───────────────────────────────────────────────────────────── */
 .members-grid {
   display: grid;
