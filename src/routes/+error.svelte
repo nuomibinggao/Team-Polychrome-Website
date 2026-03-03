@@ -259,17 +259,6 @@
   }
   .btn:active { transform: translateY(0); }
 
-  .btn-ghost {
-    background: var(--surface);
-    color: var(--purple);
-    box-shadow: none;
-    border: 1px solid var(--border);
-  }
-  .btn-ghost:hover {
-    background: var(--border);
-    box-shadow: none;
-  }
-
   /* ── Footer note ── */
   .foot-note {
     margin-top: 32px;
