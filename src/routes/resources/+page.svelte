@@ -53,3 +53,8 @@
     <a href='/#'>Download Files</a>
   </div>
 </section>
+
+<footer>
+  &copy; 2026 nuomibinggao & Team Polychrome. Licensed Under CC BY-NC-ND 4.0.
+  <div class='footer-splash'>Even errors can look good.</div>
+</footer>
