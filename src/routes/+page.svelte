@@ -11,6 +11,7 @@
   <ul>
     <li><a href='/about'>About Us</a></li>
     <li><a href='/levels'>Levels</a></li>
+    <li><a href='/resources'>Tools & Resources</a></li>
     <li><a href='/newsletter'>Newsletter</a></li>
   </ul>
 </nav>
@@ -22,7 +23,6 @@
     <h3>Current Unfinished Pages</h3>
     <ul>
       <li>Levels List</li>
-      <li>Tools & Resources</li>
       <li>Newsletter</li>
     </ul>
     <h3>To-Do</h3>
@@ -58,7 +58,7 @@
     <p>Explore the tools and resources our team members created for the ADOFAI community.</p>
   </div>
   <div class='links'>
-    <a href='/#'>View Tools & Resources</a>
+    <a href='/resources'>View Tools & Resources</a>
   </div>
 </section>
 
