@@ -17,13 +17,13 @@
     "vfxers":
       [
         {"name": "llllaio", "link": "https://space.bilibili.com/3546624443812737"},
-        {"name": "PoFiC", "link": "https://space.bilibili.com/640530603"},
+        {"name": "PoFic", "link": "https://space.bilibili.com/640530603"},
         {"name": "Larus_", "link": "https://space.bilibili.com/1176118653"}
       ],
     "tile-count": 3497,
     "bpm": 234.375,
     "tuf-id": 12226,
-    "tuf-ofc-diff": "Q3",
+    "tuf-displayed-diff": "Q3",
     "tuf-manager-diff": "U13"
   },
 
@@ -48,7 +48,7 @@
     "tile-count": null,
     "bpm": 185,
     "tuf-id": null,
-    "tuf-ofc-diff": null,
+    "tuf-displayed-diff": null,
     "tuf-manager-diff": null
   }
 ]
