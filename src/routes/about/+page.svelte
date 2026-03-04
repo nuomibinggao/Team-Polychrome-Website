@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Team Polychrome | About Us</title>
+</svelte:head>
+
 <h1>
   <img src='images/placeholder.png' alt="Team Polychrome Logo" class='team-logo'>
   About Us

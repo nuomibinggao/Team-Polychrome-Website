@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Team Polychrome</title>
+</svelte:head>
+
 <h1>
   <img src='images/placeholder.png' alt="Team Polychrome Logo" class='team-logo'>
   An ADOFAI Map-Making Community Team
