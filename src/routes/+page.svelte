@@ -19,7 +19,7 @@
 <section class='warning'>
   <div class='content'>
     <h2>Page Under Construction</h2>
-    <strong><p>This page is currently under construction. Please check back later for updates.</p></strong>
+    <strong><p>This site is currently under construction. Please check back later for updates.</p></strong>
     <h3>Current Unfinished Pages</h3>
     <ul>
       <li>Levels List</li>
