@@ -10,46 +10,85 @@
     "about": "关于我们",
     "levels": "关卡",
     "resources": "工具和资源",
-    "newsletter": "动态"
-  },
-  "warning": {
-    "title": "页面建设中",
-    "message": "该网站目前正在建设中。请稍后回来查看更新。",
-    "unfinished_pages_title": "当前未完成的页面",
-    "unfinished_pages": ["关卡列表", "动态"],
-    "todo_title": "待办事项",
-    "todo": ["添加图标"]
-  },
-  "about": {
-    "heading": "关于我们",
-    "text": "关于我们团队和成员的信息。",
-    "view_link": "查看信息",
-    "channel_link": "B站账号",
-    "join_link": "加入"
-  },
-  "projects": {
-    "levels_heading": "作品",
-    "levels_text": "在这里查看关卡列表。",
-    "levels_link": "关卡列表",
-    "tools_heading": "工具和资源",
-    "tools_text": "查看我们团队成员为冰与火之舞社区创建的工具和资源。",
-    "tools_link": "查看工具和资源"
-  },
-  "newsletter": {
-    "heading": "动态",
-    "text": "制谱、活动和成员的最新动态。",
-    "link": "查看动态"
-  },
-  "website": {
-    "heading": "此网站信息",
-    "created_by": "此网站由",
-    "framework": "使用AI/LLM工具创建。该网站使用",
-    "source_code": "框架。源代码可在",
-    "license": "查看，根据",
-    "license_end": "许可协议授权。"
+    "newsletter": "动态",
+    "back_home": "返回主页"
   },
   "footer": {
     "copyright": "© 2026 nuomibinggao & Team Polychrome。 根据CC BY-NC-ND 4.0许可协议授权。",
     "splash": "17张牌你能秒我？"
+  },
+
+  "pages": {
+
+    "home": {
+      "warning": {
+        "title": "页面建设中",
+        "message": "该网站目前正在建设中。请稍后回来查看更新。",
+        "unfinished_pages_title": "当前未完成的页面",
+        "unfinished_pages": ["关卡列表", "动态"],
+        "todo_title": "待办事项",
+        "todo": ["添加图标"]
+      },
+      "about": {
+        "heading": "关于我们",
+        "text": "关于我们团队和成员的信息。",
+        "view_link": "查看信息",
+        "channel_link": "B站账号",
+        "join_link": "加入"
+      },
+      "projects": {
+        "levels_heading": "作品",
+        "levels_text": "在这里查看关卡列表。",
+        "levels_link": "关卡列表",
+        "tools_heading": "工具和资源",
+        "tools_text": "查看我们团队成员为冰与火之舞社区创建的工具和资源。",
+        "tools_link": "查看工具和资源"
+      },
+      "newsletter": {
+        "heading": "动态",
+        "text": "制谱、活动和成员的最新动态。",
+        "link": "查看动态"
+      },
+      "website": {
+        "heading": "此网站信息",
+        "created_by": "此网站由",
+        "framework": "使用AI/LLM工具创建。该网站使用",
+        "source_code": "框架。源代码可在",
+        "license": "查看，根据",
+        "license_end": "许可协议授权。"
+      }
+    },
+
+    "about": {
+      "heading": "关于我们",
+      "text": "关于我们团队和成员的信息。",
+      "view_link": "查看信息",
+      "channel_link": "B站账号",
+      "join_link": "加入",
+      "useful_links": "常用链接",
+      "tuf_link": "The Universal Forums (TUF)",
+      "brief_heading": "简介",
+      "brief_text": "Team Polychrome由制谱师nuomibinggao和MLob_302于2025年1月8日创立，是一个冰与火之舞制谱团队。我们创作并分享关卡，合作完成项目，并在创作过程中互相支持。",
+      "members_heading": "成员",
+      "member_profile": "查看{name}的主页",
+      "members": {
+        "nuomibinggao": { "roles": "谱师 & 打谱测试员" },
+        "MLob_302":     { "roles": "谱师 & 轻特效师" },
+        "BrAme":        { "roles": "谱师 & 轻特效师 & 原创音乐创作者" },
+        "MingZi":       { "roles": "谱师" },
+        "llllaio":      { "roles": "特效师" },
+        "Larus_":       { "roles": "特效师" },
+        "PoFic":        { "roles": "特效师" }
+      }
+    },
+
+    "error": {
+      "badge": "Miss",
+      "heading": "你似乎踩空了......",
+      "text": "这个页面不存在......看起来偏离轨道了。让我们回到节拍上。",
+      "back_last": "返回上一页",
+      "back_home": "返回主页"
+    }
+
   }
 }

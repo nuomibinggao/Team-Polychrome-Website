@@ -1,32 +1,40 @@
+<script>
+  import { _ } from 'svelte-i18n';
+  import { resolve } from '$app/paths';
+  import { toggleLang } from '$lib/i18n/toggle';
+</script>
+
 <svelte:head>
-  <title>Team Polychrome | About Us</title>
+  <title>{$_('meta.title')} | {$_('pages.about.heading')}</title>
 </svelte:head>
 
 <h1>
-  <img src='images/placeholder.png' alt="Team Polychrome Logo" class='team-logo'>
-  About Us
+  <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'>
+  {$_('pages.about.heading')}
 </h1>
 
 <nav>
   <ul>
-    <li><a href='/#'>Levels List</a></li>
-    <li><a href='/'>Back to Home</a></li>
+    <li><a href={resolve('/levels')} class='pages'>{$_('nav.levels')}</a></li>
+    <li><a href={resolve('/')} class='pages'>{$_('nav.back_home')}</a></li>
+
+    <li><a href={null} onclick={(e) => { e.preventDefault(); toggleLang(); }} class='i18n'>简中 / EN</a></li>
   </ul>
 </nav>
 
 <section class='intro'>
   <div class='content'>
-    <p>Information about our team and its members.</p>
-    <h3>Useful Links</h3>
+    <p>{$_('pages.about.text')}</p>
+    <h3>{$_('pages.about.useful_links')}</h3>
     <ul>
       <li>
-        <a href='https://space.bilibili.com/3546710827600010' rel='noopener noreferrer' target='_blank'>Our Channel</a>
+        <a href='https://space.bilibili.com/3546710827600010' rel='noopener noreferrer' target='_blank'>{$_('pages.about.channel_link')}</a>
       </li>
       <li>
-        <a href='https://tuforums.com' rel='noopener noreferrer' target='_blank'>The Universal Forums (TUF)</a>
+        <a href='https://tuforums.com' rel='noopener noreferrer' target='_blank'>{$_('pages.about.tuf_link')}</a>
       </li>
       <li>
-        <a href='/#'>Join Us</a>
+        <a href={null}>{$_('pages.about.join_link')}</a>
       </li>
     </ul>
   </div>
@@ -34,62 +42,60 @@
 
 <section class='about'>
   <div class='content'>
-    <h2>Brief</h2>
-    <p>Founded in January 8, 2025 by charters <strong>nuomibinggao</strong> and <strong>MLob_302</strong>, Team Polychrome is a community of map-makers for <a href='https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice' rel='noopener noreferrer' target='_blank' class='inline-link'>ADOFAI (A Dance of Fire and Ice)</a>. 
-      We create and share levels, collaborate on projects, and support each other in our creative endeavors.
-    </p>
+    <h2>{$_('pages.about.brief_heading')}</h2>
+    <p>{$_('pages.about.brief_text')}</p>
   </div>
 </section>
 
 <section class='members'>
-  <h2>Members</h2>
+  <h2>{$_('pages.about.members_heading')}</h2>
   <div class='members-grid'>
     <div class='member-card'>
-      <a href='https://space.bilibili.com/1223643343' rel='noopener noreferrer' target='_blank' class='card-link' aria-label='View profile for nuomibinggao'></a>
+      <a href='https://space.bilibili.com/1223643343' rel='noopener noreferrer' target='_blank' class='card-link' aria-label={$_('pages.about.member_profile', { values: { name: 'nuomibinggao' } })}></a>
       <img src='images/member-avatars/nuomibinggao.png' alt='nuomibinggao' class='member-avatar'>
       <h3>nuomibinggao</h3>
-      <p class='roles'>Charter & Playtester</p>
+      <p class='roles'>{$_('pages.about.members.nuomibinggao.roles')}</p>
     </div>
     <div class='member-card'>
-      <a href='https://space.bilibili.com/1125672122' rel='noopener noreferrer' target='_blank' class='card-link' aria-label='View profile for MLob_302'></a>
+      <a href='https://space.bilibili.com/1125672122' rel='noopener noreferrer' target='_blank' class='card-link' aria-label={$_('pages.about.member_profile', { values: { name: 'MLob_302' } })}></a>
       <img src='images/member-avatars/MLob_302.png' alt='MLob_302' class='member-avatar'>
       <h3>MLob_302</h3>
-      <p class='roles'>Charter & Light VFX Creator</p>
+      <p class='roles'>{$_('pages.about.members.MLob_302.roles')}</p>
     </div>
     <div class='member-card'>
-      <a href='https://space.bilibili.com/1335919954' rel='noopener noreferrer' target='_blank' class='card-link' aria-label='View profile for BrAme'></a>
+      <a href='https://space.bilibili.com/1335919954' rel='noopener noreferrer' target='_blank' class='card-link' aria-label={$_('pages.about.member_profile', { values: { name: 'BrAme' } })}></a>
       <img src='images/member-avatars/BrAme.png' alt='BrAme' class='member-avatar'>
       <h3>BrAme</h3>
-      <p class='roles'>Charter & Light VFX Creator & Original Music Producer</p>
+      <p class='roles'>{$_('pages.about.members.BrAme.roles')}</p>
     </div>
     <div class='member-card'>
-      <a href='https://space.bilibili.com/480281552' rel='noopener noreferrer' target='_blank' class='card-link' aria-label='View profile for MingZi'></a>
+      <a href='https://space.bilibili.com/480281552' rel='noopener noreferrer' target='_blank' class='card-link' aria-label={$_('pages.about.member_profile', { values: { name: 'MingZi' } })}></a>
       <img src='images/member-avatars/MingZi.png' alt='MingZi' class='member-avatar'>
       <h3>MingZi</h3>
-      <p class='roles'>Charter</p>
+      <p class='roles'>{$_('pages.about.members.MingZi.roles')}</p>
     </div>
     <div class='member-card'>
-      <a href='https://space.bilibili.com/3546624443812737' rel='noopener noreferrer' target='_blank' class='card-link' aria-label='View profile for llllaio'></a>
+      <a href='https://space.bilibili.com/3546624443812737' rel='noopener noreferrer' target='_blank' class='card-link' aria-label={$_('pages.about.member_profile', { values: { name: 'llllaio' } })}></a>
       <img src='images/member-avatars/llllaio.png' alt='llllaio' class='member-avatar'>
       <h3>llllaio</h3>
-      <p class='roles'>VFX Creator</p>
+      <p class='roles'>{$_('pages.about.members.llllaio.roles')}</p>
     </div>
     <div class='member-card'>
-      <a href='https://space.bilibili.com/1176118653' rel='noopener noreferrer' target='_blank' class='card-link' aria-label='View profile for Larus_'></a>
+      <a href='https://space.bilibili.com/1176118653' rel='noopener noreferrer' target='_blank' class='card-link' aria-label={$_('pages.about.member_profile', { values: { name: 'Larus_' } })}></a>
       <img src='images/member-avatars/Larus_.png' alt='Larus_' class='member-avatar'>
       <h3>Larus_</h3>
-      <p class='roles'>VFX Creator</p>
+      <p class='roles'>{$_('pages.about.members.Larus_.roles')}</p>
     </div>
     <div class='member-card'>
-      <a href='https://space.bilibili.com/640530603' rel='noopener noreferrer' target='_blank' class='card-link' aria-label='View profile for PoFic'></a>
+      <a href='https://space.bilibili.com/640530603' rel='noopener noreferrer' target='_blank' class='card-link' aria-label={$_('pages.about.member_profile', { values: { name: 'PoFic' } })}></a>
       <img src='images/member-avatars/PoFic.png' alt='PoFic' class='member-avatar'>
       <h3>PoFic</h3>
-      <p class='roles'>VFX Creator</p>
+      <p class='roles'>{$_('pages.about.members.PoFic.roles')}</p>
     </div>
   </div>
 </section>
 
 <footer>
-  &copy; 2026 nuomibinggao & Team Polychrome. Licensed Under CC BY-NC-ND 4.0.
-  <div class='footer-splash'>Even errors can look good.</div>
+  {$_('footer.copyright')}
+  <div class='footer-splash'>{$_('footer.splash')}</div>
 </footer>

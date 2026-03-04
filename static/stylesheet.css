@@ -349,7 +349,7 @@ section .links + .content {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px 16px 22px;
-  min-height: 180px;
+  min-height: 220px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   position: relative;

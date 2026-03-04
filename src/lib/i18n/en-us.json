@@ -10,46 +10,85 @@
     "about": "About Us",
     "levels": "Levels",
     "resources": "Tools & Resources",
-    "newsletter": "Newsletter"
-  },
-  "warning": {
-    "title": "Page Under Construction",
-    "message": "This site is currently under construction. Please check back later for updates.",
-    "unfinished_pages_title": "Current Unfinished Pages",
-    "unfinished_pages": ["Levels List", "Newsletter"],
-    "todo_title": "To-Do",
-    "todo": ["Add icons"]
-  },
-  "about": {
-    "heading": "About Us",
-    "text": "Information about our team and its members.",
-    "view_link": "View About Us",
-    "channel_link": "Our Channel",
-    "join_link": "Join Us"
-  },
-  "projects": {
-    "levels_heading": "Our Levels",
-    "levels_text": "Check out our levels listed below.",
-    "levels_link": "Levels List",
-    "tools_heading": "Tools & Resources",
-    "tools_text": "Explore the tools and resources our team members created for the ADOFAI community.",
-    "tools_link": "View Tools & Resources"
-  },
-  "newsletter": {
-    "heading": "Newsletter",
-    "text": "Latest updates on our levels, events, and member activities.",
-    "link": "View Newsletter"
-  },
-  "website": {
-    "heading": "Website Information",
-    "created_by": "This website was created by team member",
-    "framework": "with the help of AI/LLM tools. It uses ",
-    "source_code": " as its framework. The source code is available on",
-    "license": ", however, it is licensed under the",
-    "license_end": " license."
+    "newsletter": "Newsletter",
+    "back_home": "Back to Home"
   },
   "footer": {
     "copyright": "© 2026 nuomibinggao & Team Polychrome. Licensed Under CC BY-NC-ND 4.0.",
     "splash": "Even errors can look good."
+  },
+
+  "pages": {
+
+    "home": {
+      "warning": {
+        "title": "Page Under Construction",
+        "message": "This site is currently under construction. Please check back later for updates.",
+        "unfinished_pages_title": "Current Unfinished Pages",
+        "unfinished_pages": ["Levels List", "Newsletter"],
+        "todo_title": "To-Do",
+        "todo": ["Add icons"]
+      },
+      "about": {
+        "heading": "About Us",
+        "text": "Information about our team and its members.",
+        "view_link": "View About Us",
+        "channel_link": "Our Channel",
+        "join_link": "Join Us"
+      },
+      "projects": {
+        "levels_heading": "Our Levels",
+        "levels_text": "Check out our levels listed below.",
+        "levels_link": "Levels List",
+        "tools_heading": "Tools & Resources",
+        "tools_text": "Explore the tools and resources our team members created for the ADOFAI community.",
+        "tools_link": "View Tools & Resources"
+      },
+      "newsletter": {
+        "heading": "Newsletter",
+        "text": "Latest updates on our levels, events, and member activities.",
+        "link": "View Newsletter"
+      },
+      "website": {
+        "heading": "Website Information",
+        "created_by": "This website was created by team member",
+        "framework": "with the help of AI/LLM tools. It uses ",
+        "source_code": " as its framework. The source code is available on",
+        "license": ", however, it is licensed under the",
+        "license_end": " license."
+      }
+    },
+
+    "about": {
+      "heading": "About Us",
+      "text": "Information about our team and its members.",
+      "view_link": "View About Us",
+      "channel_link": "Our Channel",
+      "join_link": "Join Us",
+      "useful_links": "Useful Links",
+      "tuf_link": "The Universal Forums (TUF)",
+      "brief_heading": "Brief",
+      "brief_text": "Founded on January 8, 2025 by charters nuomibinggao and MLob_302, Team Polychrome is a community of map-makers for ADOFAI (A Dance of Fire and Ice). We create and share levels, collaborate on projects, and support each other in our creative endeavors.",
+      "members_heading": "Members",
+      "member_profile": "View profile for {name}",
+      "members": {
+        "nuomibinggao": { "roles": "Charter & Playtester" },
+        "MLob_302":     { "roles": "Charter & Light VFX Creator" },
+        "BrAme":        { "roles": "Charter & Light VFX Creator & Original Music Producer" },
+        "MingZi":       { "roles": "Charter" },
+        "llllaio":      { "roles": "VFX Creator" },
+        "Larus_":       { "roles": "VFX Creator" },
+        "PoFic":        { "roles": "VFX Creator" }
+      }
+    },
+
+    "error": {
+      "badge": "Miss",
+      "heading": "You missed a beat.",
+      "text": "This page doesn't exist — looks like it got off-track somewhere. Let's get you back in rhythm.",
+      "back_last": "Back to Last Page",
+      "back_home": "Back to Home"
+    }
+
   }
 }

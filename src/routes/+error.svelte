@@ -1,5 +1,11 @@
+<script>
+  import { _ } from 'svelte-i18n';
+  import { resolve } from '$app/paths';
+  import { toggleLang } from '$lib/i18n/toggle';
+</script>
+
 <svelte:head>
-  <title>Team Polychrome | Error 404 - Page Not Found</title>
+  <title>{$_('meta.title')} | {$_('pages.error.heading')}</title>
 </svelte:head>
 
 <div class='page'>
@@ -23,16 +29,17 @@
   </div>
 
   <div class='card'>
-    <span class='badge'>Miss ✕</span>
+    <span class='badge'>{$_('pages.error.badge')} ✕</span>
     <div class='error-number'>404</div>
     <div class='divider'></div>
-    <h1>You missed a beat.</h1>
-    <p>This page doesn't exist — looks like it got off-track somewhere.<br>Let's get you back in rhythm.</p>
+    <h1>{$_('pages.error.heading')}</h1>
+    <p>{$_('pages.error.text')}</p>
     <div class='buttons'>
-      <button on:click={() => history.back()} class='btn'>Back to Last Page</button>
-      <a href='/' class='btn'>Back to Home</a>
+      <button onclick={() => history.back()} class='btn'>{$_('pages.error.back_last')}</button>
+      <a href={resolve('/')} class='btn'>{$_('pages.error.back_home')}</a>
+      <a href={null} onclick={(e) => { e.preventDefault(); toggleLang(); }} class='btn'>简中 / EN</a>
     </div>
-    <div class='foot-note'>Even errors can look good.</div>
+    <div class='foot-note'>{$_('footer.splash')}</div>
   </div>
 </div>
 
@@ -72,7 +79,6 @@
     to   { transform: translate(30px, 20px) scale(1.05); }
   }
 
-  /* rest of styles unchanged below... */
   .track {
     position: fixed;
     bottom: 48px;
