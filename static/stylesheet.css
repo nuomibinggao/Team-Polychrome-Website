@@ -212,6 +212,34 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 0;
+  align-items: center;
+}
+
+/* Push i18n links to the right */
+nav ul li:has(a.i18n):first-of-type,
+nav ul li:has(a.i18n) {
+  margin-left: auto;
+}
+nav ul li:has(a.i18n) + li:has(a.i18n) {
+  margin-left: 0;
+}
+
+nav a.i18n {
+  all: unset;
+  display: block;
+  padding: 14px 16px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  opacity: 0.7;
+  transition: color 0.2s, opacity 0.2s;
+  cursor: pointer;
+  font-family: 'Chillax', sans-serif;
+}
+
+nav a.i18n:hover {
+  color: var(--purple);
+  opacity: 1;
 }
 
 /* nav link styles are defined globally under Typography above */
@@ -321,7 +349,7 @@ section .links + .content {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px 16px 22px;
-  min-height: 220px;
+  min-height: 180px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   position: relative;

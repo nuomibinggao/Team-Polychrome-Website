@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Team Polychrome"
+  },
+  "h1": {
+    "logo_alt": "Team Polychrome Logo",
+    "subtitle": "An ADOFAI Level Design Team"
+  },
+  "nav": {
+    "about": "About Us",
+    "levels": "Levels",
+    "resources": "Tools & Resources",
+    "newsletter": "Newsletter"
+  },
+  "warning": {
+    "title": "Page Under Construction",
+    "message": "This site is currently under construction. Please check back later for updates.",
+    "unfinished_pages_title": "Current Unfinished Pages",
+    "unfinished_pages": ["Levels List", "Newsletter"],
+    "todo_title": "To-Do",
+    "todo": ["Add icons"]
+  },
+  "about": {
+    "heading": "About Us",
+    "text": "Information about our team and its members.",
+    "view_link": "View About Us",
+    "channel_link": "Our Channel",
+    "join_link": "Join Us"
+  },
+  "projects": {
+    "levels_heading": "Our Levels",
+    "levels_text": "Check out our levels listed below.",
+    "levels_link": "Levels List",
+    "tools_heading": "Tools & Resources",
+    "tools_text": "Explore the tools and resources our team members created for the ADOFAI community.",
+    "tools_link": "View Tools & Resources"
+  },
+  "newsletter": {
+    "heading": "Newsletter",
+    "text": "Latest updates on our levels, events, and member activities.",
+    "link": "View Newsletter"
+  },
+  "website": {
+    "heading": "Website Information",
+    "created_by": "This website was created by team member",
+    "framework": "with the help of AI/LLM tools. It uses ",
+    "source_code": " as its framework. The source code is available on",
+    "license": ", however, it is licensed under the",
+    "license_end": " license."
+  },
+  "footer": {
+    "copyright": "© 2026 nuomibinggao & Team Polychrome. Licensed Under CC BY-NC-ND 4.0.",
+    "splash": "Even errors can look good."
+  }
+}
