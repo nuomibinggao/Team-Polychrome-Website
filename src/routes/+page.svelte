@@ -6,8 +6,8 @@
 <nav>
   <ul>
     <li><a href='/about'>About Us</a></li>
-    <li><a href='/#'>Levels</a></li>
-    <li><a href='/#'>Newsletter</a></li>
+    <li><a href='/levels'>Levels</a></li>
+    <li><a href='/newsletter'>Newsletter</a></li>
   </ul>
 </nav>
 
@@ -47,7 +47,7 @@
     <p>Check out our levels listed below.</p>
   </div>
   <div class='links'>
-    <a href='/#'>Levels List</a>
+    <a href='/levels'>Levels List</a>
   </div>
   <div class='content'>
     <h2>Tools & Resources</h2>
@@ -64,7 +64,7 @@
     <p>Latest updates on our levels, events, and member activities.</p>
   </div>
   <div class='links'>
-    <a href='/#'>View Newsletter</a>
+    <a href='/newsletter'>View Newsletter</a>
   </div>
 </section>
 
