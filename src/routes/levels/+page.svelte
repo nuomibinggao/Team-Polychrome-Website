@@ -23,6 +23,7 @@
 
 <section class='intro'>
   <div class='content'>
+    <h2>{$_('pages.levels.heading')}</h2>
     <p>{$_('pages.levels.intro')}</p>
     <h3>{$_('pages.about.useful_links')}</h3>
     <ul>

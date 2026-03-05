@@ -113,6 +113,11 @@
       }
     },
 
+    "levels" : {
+      "heading": "Level List",
+      "intro": "Check out our levels listed below."
+    },
+
     "error": {
       "badge": "Miss",
       "heading": "You missed a beat.",
