@@ -1,6 +1,6 @@
 import { addMessages, init, locale } from 'svelte-i18n';
-import enUS from './en-us.json';
-import zhCN from './zh-cn.json';
+import enUS from './translations/en-us.json';
+import zhCN from './translations/zh-cn.json';
 
 addMessages('en-us', enUS);
 addMessages('zh-cn', zhCN);

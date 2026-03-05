@@ -1,3 +1,8 @@
+<script>
+  // import { _ } from 'svelte-i18n';
+	import { resolve } from '$app/paths';
+  import { toggleLang } from '$lib/i18n/toggle';
+</script>
 <svelte:head>
   <title>Team Polychrome | Tools & Resources</title>
 </svelte:head>
@@ -9,7 +14,9 @@
 
 <nav>
   <ul>
-    <li><a href='/'>Back to Home</a></li>
+    <li><a href={resolve('/')} class='pages'>Back to Home</a></li>
+
+    <li><a href={null} onclick={(e) => { e.preventDefault(); toggleLang(); }} class='i18n'>简中 / EN</a></li>
   </ul>
 </nav>
 
@@ -50,7 +57,7 @@
   </div>
   <div class='links'>
     <a href='https://www.bilibili.com/video/BV1xRHZz7Eeq' rel='noopener noreferrer' target='_blank'>View Demo Video</a>
-    <a href='/#'>Download Files</a>
+    <a href={null}>Download Files</a>
   </div>
 </section>
 
