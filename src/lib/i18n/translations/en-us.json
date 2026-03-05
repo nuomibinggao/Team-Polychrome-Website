@@ -115,7 +115,16 @@
 
     "levels" : {
       "heading": "Level List",
-      "intro": "Check out our levels listed below."
+      "intro": "Check out our levels listed below.",
+
+      "released": "Release Date",
+      "bpm": "Base BPM",
+      "tiles": "Tiles",
+      "charters": "Charters",
+      "vfxers": "VFX Creators",
+
+      "watch_demo": "Watch Demo Video",
+      "song_on": " Release"
     },
 
     "error": {

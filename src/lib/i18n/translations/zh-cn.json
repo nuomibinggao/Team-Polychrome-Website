@@ -115,7 +115,16 @@
 
     "levels" : {
       "heading": "关卡列表",
-      "intro": "在这里查看我们制作的的关卡。"
+      "intro": "在这里查看我们制作的的关卡。",
+
+      "released": "发布日期",
+      "bpm": "基础BPM",
+      "tiles": "物理量（砖块数量）",
+      "charters": "谱师",
+      "vfxers": "特效师",
+
+      "watch_demo": "观看演示视频",
+      "song_on": "音乐链接"
     },
 
     "error": {
