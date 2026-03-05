@@ -8,7 +8,7 @@
   },
   "nav": {
     "about": "关于我们",
-    "levels": "关卡",
+    "levels": "关卡列表",
     "resources": "工具和资源",
     "newsletter": "动态",
     "back_home": "返回主页"
@@ -79,6 +79,37 @@
         "llllaio":      { "roles": "特效师" },
         "Larus_":       { "roles": "特效师" },
         "PoFic":        { "roles": "特效师" }
+      }
+    },
+
+    "resources": {
+      "heading": "工具和资源",
+
+      "intro_text": "由Team Polychrome成员为冰与火之舞社区创建或推荐的工具、实用程序和资源的集合。",
+
+      "modlist_link": "GitHub上的modlist.org",
+
+      "github_link": "在GitHub上查看",
+
+      "prettier_tags": {
+        "heading": "Prettier Tags",
+
+        "desc_1": "Prettier Tags是为",
+        "desc_2": "和",
+        "desc_3": "设计的扩展Tag集合，提供了更美观和现代的Tag选项。",
+
+        "desc_4": "此项目最初由",
+        "desc_5": "创建，后来由",
+        "desc_6": "改进。"
+      },
+
+      "keyviewer": {
+        "heading": "nuomibinggao的KeyViewer配置",
+        "desc_1": "现代简洁风格的KeyViewer配置文件，适用于喜欢简约界面的玩家。",
+        "desc_2": "由团队成员",
+        "desc_3": "创建。",
+        "demo_video": "查看演示视频",
+        "download": "下载文件"
       }
     },
 
