@@ -8,9 +8,8 @@
   },
   "nav": {
     "about": "About Us",
-    "levels": "Levels",
+    "levels": "Level List",
     "resources": "Tools & Resources",
-    "newsletter": "Newsletter",
     "back_home": "Back to Home"
   },
   "footer": {
@@ -21,14 +20,6 @@
   "pages": {
 
     "home": {
-      "warning": {
-        "title": "Page Under Construction",
-        "message": "This site is currently under construction. Please check back later for updates.",
-        "unfinished_pages_title": "Current Unfinished Pages",
-        "unfinished_pages": ["Levels List", "Newsletter"],
-        "todo_title": "To-Do",
-        "todo": ["Add icons"]
-      },
       "about": {
         "heading": "About Us",
         "text": "Information about our team and its members.",
@@ -43,11 +34,6 @@
         "tools_heading": "Tools & Resources",
         "tools_text": "Explore the tools and resources our team members created for the ADOFAI community.",
         "tools_link": "View Tools & Resources"
-      },
-      "newsletter": {
-        "heading": "Newsletter",
-        "text": "Latest updates on our levels, events, and member activities.",
-        "link": "View Newsletter"
       },
       "website": {
         "heading": "Website Information",
@@ -121,10 +107,14 @@
       "bpm": "Base BPM",
       "tiles": "Tiles",
       "charters": "Charters",
+      "guest_charters": "Guest Charters",
       "vfxers": "VFX Creators",
+      "guest_vfxers": "Guest VFX Creators",
 
       "watch_demo": "Watch Demo Video",
-      "song_on": " Release"
+      "song_on": " Release",
+
+      "load_error": "Failed to load levels, Please try again later."
     },
 
     "error": {

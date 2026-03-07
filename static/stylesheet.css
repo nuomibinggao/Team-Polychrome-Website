@@ -172,21 +172,29 @@ a.inline-link:hover {
   text-decoration: underline;
 }
 
-/* ── Page Header (h1 + logo) ────────────────────────────────────────────────── */
+/* ── Page Header ────────────────────────────────────────────────────────────── */
 h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
-  /* The text node inside h1 is the subtitle */
+  gap: 6px;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--purple-deep);
+  letter-spacing: -0.02em;
+  text-transform: none;
+  padding: 40px 64px 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+
+h1 p {
   font-size: clamp(0.8rem, 1.4vw, 0.95rem);
   font-weight: 400;
   color: var(--text-muted);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 40px 64px 28px;
-  border-bottom: 1px solid var(--border);
-  background: var(--white);
+  line-height: 1.4;
 }
 
 /* Logo = fancy display title: no bounding box, renders like styled text */
@@ -577,7 +585,7 @@ footer {
 
 /* ── Responsive ─────────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  h1 { padding: 32px 24px 20px; }
+  h1 { padding: 32px 24px 20px; font-size: clamp(1.4rem, 6vw, 2rem); }
   nav { padding: 0 24px; }
   section { padding: 40px 24px; }
 

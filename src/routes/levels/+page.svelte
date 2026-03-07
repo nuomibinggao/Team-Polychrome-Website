@@ -4,7 +4,7 @@
   import { toggleLang } from '$lib/i18n/toggle';
   import DOMPurify from 'dompurify';
 
-  const levels = fetch('/data-storage/levels.json').then(r => r.json());
+  const levels = fetch('/data-storage/levels/levels.json').then(r => r.json());
 
   function sanitize(html: string): string {
     return DOMPurify.sanitize(html, { ALLOWED_TAGS: ['strong', 'em', 'a', 'br'] });
@@ -16,8 +16,9 @@
 </svelte:head>
 
 <h1>
-  <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'>
-  {$_('pages.levels.heading')}
+  <!-- <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'> -->
+  Team Polychrome
+  <p>{$_('pages.levels.heading')}</p>
 </h1>
 
 <nav>
@@ -144,11 +145,27 @@
               <a href={resolve(person.link)} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < level.charters.length - 1},&nbsp;{/if}
             {/each}
           </div>
+          {#if level.guest_charters?.filter((p: unknown) => p !== null).length}
+            <div class='credit-group'>
+              <span class='credit-label'>{$_('pages.levels.guest_charters')}:</span>
+              {#each level.guest_charters.filter((p: unknown) => p !== null) as person, i (person.name)}
+                <a href={resolve(person.link)} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < level.guest_charters.filter((p: unknown) => p !== null).length - 1},&nbsp;{/if}
+              {/each}
+            </div>
+          {/if}
           {#if level.vfxers?.length}
             <div class='credit-group'>
               <span class='credit-label'>{$_('pages.levels.vfxers')}:</span>
               {#each level.vfxers as person, i (person.name)}
                 <a href={resolve(person.link)} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < level.vfxers.length - 1},&nbsp;{/if}
+              {/each}
+            </div>
+          {/if}
+          {#if level.guest_vfxers?.filter((p: unknown) => p !== null).length}
+            <div class='credit-group'>
+              <span class='credit-label'>{$_('pages.levels.guest_vfxers')}:</span>
+              {#each level.guest_vfxers.filter((p: unknown) => p !== null) as person, i (person.name)}
+                <a href={resolve(person.link)} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < level.guest_vfxers.filter((p: unknown) => p !== null).length - 1},&nbsp;{/if}
               {/each}
             </div>
           {/if}

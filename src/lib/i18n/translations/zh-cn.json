@@ -10,7 +10,6 @@
     "about": "关于我们",
     "levels": "关卡列表",
     "resources": "工具和资源",
-    "newsletter": "动态",
     "back_home": "返回主页"
   },
   "footer": {
@@ -21,14 +20,6 @@
   "pages": {
 
     "home": {
-      "warning": {
-        "title": "页面建设中",
-        "message": "该网站目前正在建设中。请稍后回来查看更新。",
-        "unfinished_pages_title": "当前未完成的页面",
-        "unfinished_pages": ["关卡列表", "动态"],
-        "todo_title": "待办事项",
-        "todo": ["添加图标"]
-      },
       "about": {
         "heading": "关于我们",
         "text": "关于我们团队和成员的信息。",
@@ -43,11 +34,6 @@
         "tools_heading": "工具和资源",
         "tools_text": "查看我们团队成员为冰与火之舞社区创建的工具和资源。",
         "tools_link": "查看工具和资源"
-      },
-      "newsletter": {
-        "heading": "动态",
-        "text": "制谱、活动和成员的最新动态。",
-        "link": "查看动态"
       },
       "website": {
         "heading": "此网站信息",
@@ -104,7 +90,7 @@
       },
 
       "keyviewer": {
-        "heading": "nuomibinggao的KeyViewer配置",
+        "heading": "nuomibinggao的KeyViewer文件",
         "desc_1": "现代简洁风格的KeyViewer配置文件，适用于喜欢简约界面的玩家。",
         "desc_2": "由团队成员",
         "desc_3": "创建。",
@@ -121,10 +107,14 @@
       "bpm": "基础BPM",
       "tiles": "物理量（砖块数量）",
       "charters": "谱师",
+      "guest_charters": "特邀谱师",
       "vfxers": "特效师",
+      "guest_vfxers": "特邀特效师",
 
       "watch_demo": "观看演示视频",
-      "song_on": "音乐链接"
+      "song_on": "音乐链接",
+
+      "load_error": "加载关卡失败，请稍后再试。"
     },
 
     "error": {

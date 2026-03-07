@@ -9,8 +9,9 @@
 </script>
 
 <h1>
-  <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'>
-  {$_('h1.subtitle')}
+  <!-- <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'> -->
+  Team Polychrome
+  <p>{$_('h1.subtitle')}</p>
 </h1>
 
 <nav>
@@ -18,30 +19,10 @@
     <li><a href={resolve('/about')} class='pages'>{$_('nav.about')}</a></li>
     <li><a href={resolve('/levels')} class='pages'>{$_('nav.levels')}</a></li>
     <li><a href={resolve('/resources')} class='pages'>{$_('nav.resources')}</a></li>
-    <li><a href={resolve('/newsletter')} class='pages'>{$_('nav.newsletter')}</a></li>
 
     <li><a href={null} onclick={(e) => { e.preventDefault(); toggleLang(); }} class='i18n'>简中 / EN</a></li>
   </ul>
 </nav>
-
-<section class='warning'>
-  <div class='content'>
-    <h2>{$_('pages.home.warning.title')}</h2>
-    <p><strong>{$_('pages.home.warning.message')}</strong></p>
-    <h3>{$_('pages.home.warning.unfinished_pages_title')}</h3>
-    <ul>
-      {#each $_('pages.home.warning.unfinished_pages') as page (page)}
-        <li>{page}</li>
-      {/each}
-    </ul>
-    <h3>{$_('pages.home.warning.todo_title')}</h3>
-    <ul>
-      {#each $_('pages.home.warning.todo') as task (task)}
-        <li>{task}</li>
-      {/each}
-    </ul>
-  </div>
-</section>
 
 <section class='about'>
   <div class='content'>
@@ -70,16 +51,6 @@
   </div>
   <div class='links'>
     <a href={resolve('/resources')}>{$_('pages.home.projects.tools_link')}</a>
-  </div>
-</section>
-
-<section class='newsletter'>
-  <div class='content'>
-    <h2>{$_('pages.home.newsletter.heading')}</h2>
-    <p>{$_('pages.home.newsletter.text')}</p>
-  </div>
-  <div class='links'>
-    <a href={resolve('/newsletter')}>{$_('pages.home.newsletter.link')}</a>
   </div>
 </section>
 

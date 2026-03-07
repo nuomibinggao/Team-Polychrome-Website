@@ -1,6 +1,6 @@
 <script>
   import { _ } from 'svelte-i18n';
-  import { resolve } from '$app/paths';
+  import { resolve, asset } from '$app/paths';
   import { toggleLang } from '$lib/i18n/toggle';
 </script>
 
@@ -9,8 +9,9 @@
 </svelte:head>
 
 <h1>
-  <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'>
-  {$_('pages.resources.heading')}
+  <!-- <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'> -->
+  Team Polychrome
+  <p>{$_('pages.resources.heading')}</p>
 </h1>
 
 <nav>
@@ -67,7 +68,7 @@
 
   <div class='links'>
     <a href='https://www.bilibili.com/video/BV1xRHZz7Eeq' rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.demo_video')}</a>
-    <a href={null}>{$_('pages.resources.keyviewer.download')}</a>
+    <a href={asset('/data-storage/kv-files/kv-files.zip')} download='kv-files.zip'>{$_('pages.resources.keyviewer.download')}</a>
   </div>
 </section>
 

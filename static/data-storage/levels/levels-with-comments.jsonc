@@ -15,12 +15,14 @@
         {"name": "Mono_", "link": "https://space.bilibili.com/1125672122"},
         {"name": "こおりん (nuomibinggao)", "link": "https://space.bilibili.com/1223643343"}
       ],
+    "guest_charters": [null],
     "vfxers":
       [
         {"name": "llllaio", "link": "https://space.bilibili.com/3546624443812737"},
         {"name": "PoFic", "link": "https://space.bilibili.com/640530603"},
         {"name": "Larus_", "link": "https://space.bilibili.com/1176118653"}
       ],
+    "guest_vfxers": [null],
     "tile-count": 3497,
     "bpm": 234.375,
     "tuf-id": 12226,
@@ -34,9 +36,9 @@
 
   {
     "id": 2,
-    "artist": ["Yukira", "ゆきら"],
-    "artist-link": "https://space.bilibili.com/407240774",
-    "title": "Pure White Wings",
+    "artist": ["??????", "???"], // ["Yukira", "ゆきら"],
+    "artist-link": null, // "https://space.bilibili.com/407240774",
+    "title": "???? ????? ?????", // "Pure White Wings",
     "release-date": "Q3, 2026",
     "special-tag": [["Original Music"], ["原创歌曲"]],
     "status-tag": [["WIP"], ["制作中"]],
@@ -47,11 +49,14 @@
         {"name": "こおりん (nuomibinggao)", "link": "https://space.bilibili.com/1223643343"},
         {"name": "Mono_", "link": "https://space.bilibili.com/1125672122"}
       ],
+    "guest_charters": [null],
     "vfxers":
       [
-        {"name": "BUGJI", "link": "https://space.bilibili.com/1057790493"},
         {"name": "Larus_", "link": "https://space.bilibili.com/1176118653"}
       ],
+    "guest_vfxers": [
+      {"name": "BUGJI", "link": "https://space.bilibili.com/1057790493"}
+    ],
     "tile-count": null,
     "bpm": 185,
     "tuf-id": null,

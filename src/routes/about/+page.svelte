@@ -9,8 +9,9 @@
 </svelte:head>
 
 <h1>
-  <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'>
-  {$_('pages.about.heading')}
+  <!-- <img src='images/placeholder.png' alt={$_('h1.logo_alt')} class='team-logo'> -->
+  Team Polychrome
+  <p>{$_('pages.about.heading')}</p>
 </h1>
 
 <nav>
