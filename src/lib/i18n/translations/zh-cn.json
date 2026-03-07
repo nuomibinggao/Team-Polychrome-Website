@@ -40,7 +40,7 @@
         "created_by": "此网站由",
         "framework": "使用AI/LLM工具创建。该网站使用",
         "source_code": "框架。源代码可在",
-        "license": "查看，根据",
+        "license": "查看, 根据",
         "license_end": "许可协议授权。"
       }
     },
@@ -54,7 +54,7 @@
       "useful_links": "常用链接",
       "tuf_link": "The Universal Forums (TUF)",
       "brief_heading": "简介",
-      "brief_text": "Team Polychrome由制谱师nuomibinggao和MLob_302于2025年1月8日创立，是一个冰与火之舞制谱团队。我们创作并分享关卡，合作完成项目，并在创作过程中互相支持。",
+      "brief_text": "Team Polychrome由制谱师nuomibinggao和MLob_302于2025年1月8日创立, 是一个冰与火之舞制谱团队。我们创作并分享关卡, 合作完成项目, 并在创作过程中互相支持。",
       "members_heading": "成员",
       "member_profile": "查看{name}的主页",
       "members": {
@@ -82,16 +82,16 @@
 
         "desc_1": "Prettier Tags是为",
         "desc_2": "和",
-        "desc_3": "设计的扩展Tag集合，提供了更美观和现代的Tag选项。",
+        "desc_3": "设计的扩展Tag集合, 提供了更美观和现代的Tag选项。",
 
         "desc_4": "此项目最初由",
-        "desc_5": "创建，后来由",
+        "desc_5": "创建, 后来由",
         "desc_6": "改进。"
       },
 
       "keyviewer": {
         "heading": "nuomibinggao的KeyViewer文件",
-        "desc_1": "现代简洁风格的KeyViewer配置文件，适用于喜欢简约界面的玩家。",
+        "desc_1": "现代简洁风格的KeyViewer配置文件, 适用于喜欢简约界面的玩家。",
         "desc_2": "由团队成员",
         "desc_3": "创建。",
         "demo_video": "查看演示视频",
@@ -114,7 +114,7 @@
       "watch_demo": "观看演示视频",
       "song_on": "音乐链接",
 
-      "load_error": "加载关卡失败，请稍后再试。"
+      "load_error": "加载关卡失败, 请稍后再试。"
     },
 
     "error": {
