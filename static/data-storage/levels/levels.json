@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "artist": "Frums",
-    "artist-link": "https://www.frums.xyz",
+    "artist": [{"name": ["Frums"], "link": "https://www.frums.xyz"}],
     "title": "swallow SMOKE",
-    "release-date": "Apr., 2026",
+    "release-date": "May, 2026",
     "special-tag": null,
     "status-tag": [["VFX Upcoming"], ["特效制作中"]],
     "demo-video-id": [["No VFX", "无特效"], "BV1MhFpzhEfe"],
     "song-link": ["Bandcamp", "https://frums.bandcamp.com/track/swallow-smoke-2"],
+    "original_rhythm_game_level_link": [null, null, null],
     "charters":
       [
         {"name": "MingZi", "link": "https://space.bilibili.com/480281552"},
@@ -36,18 +36,17 @@
 
   {
     "id": 2,
-    "artist": ["??????", "???"],
-    "artist-link": null,
-    "title": "???? ????? ?????",
+    "artist": [{"name": ["Yukira", "ゆきら"], "link": "https://space.bilibili.com/407240774"}],
+    "title": "Pure White Wings",
     "release-date": "Q3, 2026",
     "special-tag": [["Original Music"], ["原创歌曲"]],
-    "status-tag": [["WIP"], ["制作中"]],
-    "demo-video-id": null,
-    "song-link": null,
+    "status-tag": [["VFX Upcoming"], ["特效制作中"]],
+    "demo-video-id": [["Chart Preview", "采音预告"], "BV1sESZBFE2T"],
+    "song-link": ["Bilibili", "https://www.bilibili.com/video/BV1rhSUBFEEA"],
+    "original_rhythm_game_level_link": [null, null, null],
     "charters":
       [
-        {"name": "nuomibinggao", "link": "https://space.bilibili.com/1223643343"},
-        {"name": "Mono_", "link": "https://space.bilibili.com/1125672122"}
+        {"name": "nuomibinggao", "link": "https://space.bilibili.com/1223643343"}
       ],
     "guest_charters": [null],
     "vfxers":
@@ -55,10 +54,43 @@
         {"name": "Larus_", "link": "https://space.bilibili.com/1176118653"}
       ],
     "guest_vfxers": [
-      {"name": "BUGJI", "link": "https://space.bilibili.com/1057790493"}
+      {"name": "BUGJI", "link": "https://space.bilibili.com/1057790493"},
+      {"name": "RinWinter", "link": "https://space.bilibili.com/512995695"},
+      {"name": "Tying-Sky-e", "link": "https://space.bilibili.com/3546692045507264"}
     ],
     "tile-count": null,
     "bpm": 185,
+    "tuf-id": null,
+    "tuf-displayed-diff": null,
+    "tuf-manager-diff": null,
+    "level_desc": [null, null]
+  },
+
+  {
+    "id": 3,
+    "artist": [
+      {"name": ["takehirotei"], "link": "https://takehirotei.bandcamp.com"},
+      {"name": [" HowToPlayLN"], "link": "https://howtoplayln.bandcamp.com/"}
+    ],
+    "title": "Essence",
+    "release-date": "2027",
+    "special-tag": null,
+    "status-tag": [["W.I.P."], ["制作中"]],
+    "demo-video-id": null,
+    "song-link": ["Soundcloud", "https://soundcloud.com/indekkusu/essence"],
+    "original_rhythm_game_level_link": ["View osu!mania Beatmap", "查看osu!mania地图", "https://osu.ppy.sh/beatmapsets/1943786#mania/4021083"],
+    "charters":
+      [
+        {"name": "nuomibinggao", "link": "https://space.bilibili.com/1223643343"},
+        {"name": "Mono_", "link": "https://space.bilibili.com/1125672122"},
+        {"name": "MingZi", "link": "https://space.bilibili.com/480281552"}
+      ],
+    "guest_charters": [null],
+    "vfxers":
+      [null],
+    "guest_vfxers": [null],
+    "tile-count": null,
+    "bpm": 214,
     "tuf-id": null,
     "tuf-displayed-diff": null,
     "tuf-manager-diff": null,

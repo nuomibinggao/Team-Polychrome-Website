@@ -1,48 +1,48 @@
 /* Chillax font styles */
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Chillax', 'Xiaolai SC';
   src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-variable.woff2') format('woff2');
   font-weight: 200 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Chillax', 'Xiaolai SC';
   src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-extralight.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Chillax', 'Xiaolai SC';
   src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Chillax', 'Xiaolai SC';
   src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Chillax', 'Xiaolai SC';
   src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Chillax', 'Xiaolai SC';
   src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-semibold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Chillax', 'Xiaolai SC';
   src: url('https://api.fontshare.com/v2/fonts/chillax/chillax-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
@@ -73,7 +73,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Chillax', sans-serif;
+  font-family: 'Chillax', 'Xiaolai SC', sans-serif;
   background-color: var(--off-white);
   color: var(--text);
   line-height: 1.7;
@@ -101,7 +101,7 @@ h1, nav { width: 100%; }
 
 /* ── Typography ─────────────────────────────────────────────────────────────── */
 h1, h2, h3 {
-  font-family: 'Chillax', sans-serif;
+  font-family: 'Chillax', 'Xiaolai SC', sans-serif;
   color: var(--purple-deep);
   line-height: 1.2;
 }
@@ -146,7 +146,7 @@ nav a {
   border-bottom: 2px solid transparent;
   transition: color 0.2s, border-color 0.2s;
   cursor: pointer;
-  font-family: 'Chillax', sans-serif;
+  font-family: 'Chillax', 'Xiaolai SC', sans-serif;
 }
 
 nav a:hover {
@@ -242,7 +242,7 @@ nav a.i18n {
   opacity: 0.7;
   transition: color 0.2s, opacity 0.2s;
   cursor: pointer;
-  font-family: 'Chillax', sans-serif;
+  font-family: 'Chillax', 'Xiaolai SC', sans-serif;
 }
 
 nav a.i18n:hover {
@@ -286,7 +286,7 @@ section {
   letter-spacing: 0.1em;
   color: var(--purple);
   margin-bottom: 12px;
-  font-family: 'Chillax', sans-serif;
+  font-family: 'Chillax', 'Xiaolai SC', sans-serif;
   font-weight: 500;
 }
 
@@ -408,7 +408,7 @@ a.card-link {
 }
 
 .member-card h3 {
-  font-family: 'Chillax', sans-serif;
+  font-family: 'Chillax', 'Xiaolai SC', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--purple-deep);
@@ -439,7 +439,7 @@ footer {
 }
 
 .footer-splash {
-  font-family: 'Chillax', sans-serif;
+  font-family: 'Chillax', 'Xiaolai SC', sans-serif;
   font-style: italic;
   color: var(--purple-light);
   font-size: 0.9rem;

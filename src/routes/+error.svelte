@@ -238,7 +238,7 @@
     gap: 8px;
     padding: 12px 28px;
     border-radius: 999px;
-    font-family: 'Chillax', sans-serif;
+    font-family: 'Chillax', 'Xiaolai SC', sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
     background: var(--purple);

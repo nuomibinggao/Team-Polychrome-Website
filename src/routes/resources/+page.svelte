@@ -1,6 +1,6 @@
 <script>
   import { _ } from 'svelte-i18n';
-  import { resolve, asset } from '$app/paths';
+  import { resolve } from '$app/paths';
   import { toggleLang } from '$lib/i18n/toggle';
 </script>
 
@@ -67,8 +67,7 @@
   </div>
 
   <div class='links'>
-    <a href='https://www.bilibili.com/video/BV1xRHZz7Eeq' rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.demo_video')}</a>
-    <a href={asset('/data-storage/kv-files/kv-files.zip')} download='kv-files.zip'>{$_('pages.resources.keyviewer.download')}</a>
+    <a href={resolve('/resources/kv-profiles')}>{$_('pages.resources.keyviewer.details')}</a>
   </div>
 </section>
 

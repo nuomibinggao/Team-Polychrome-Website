@@ -90,12 +90,25 @@
       },
 
       "keyviewer": {
-        "heading": "nuomibinggao's KeyViewer Files",
+        "heading": "KeyViewer Profiles",
         "desc_1": "A collection of modern minimal style KeyViewer profiles made for the KeyViewer mod.",
         "desc_2": "Made by team member ",
         "desc_3": ".",
-        "demo_video": "View Demo Video",
-        "download": "Download Files"
+        "details": "Download Profiles",
+        "back": "See Other Resources",
+
+        "demo_video": "Watch Demo Video",
+
+        "dmnote_link": "DM.NOTE on GitHub",
+
+        "basic_info_title": "Basic Information",
+        "basic_info_desc": "These profiles are either made for the <a href='https://github.com/modlist-org/KeyViewer' rel='noopener noreferrer' target='_blank' class='inline-link'>KeyViewer</a> mod versions <strong>4.9.7 to 4.10.3</strong>, or the external program DM.NOTE. We recommend using DM.NOTE (Profiles configured using <strong>v 1.6.0</strong>) or older versions of KeyViewer (3.x.x, currently not supported because of their limited customizability) since newer versions of KeyViewer either have visual bugs or interfere with player inputs.</p><p>We recommend using the <a href='https://www.fontshare.com/fonts/chillax' rel='noopener noreferrer' target='_blank' class='inline-link'>Chillax</a> font, but you can also use other fonts if you prefer. The open-source <a href='https://fonts.google.com/download?family=Material+Symbols+Outlined|Material+Symbols+Rounded|Material+Symbols+Sharp' rel='noopener noreferrer' target='_blank' class='inline-link'>Google Material Symbols</a> font is required for DM.NOTE profiles to look properly, but you can customize them afterwards if you wish.",
+
+        "for_dmn": "For the DM.NOTE External Program",
+        "for_dmn_desc": "Profiles designed for use with the <a href='https://github.com/DmNote-App/DmNote' rel='noopener noreferrer' target='_blank' class='inline-link'>DM.NOTE</a> external program, version <strong>v 1.6.0</strong> is recommended.</p><h3>How to Install</h3><p>Extract the downloaded zip file, launch DM.NOTE and go to the profile settings. Click on the small triangle beside the folder icon located at the bottom right corner of the window, select <strong>Import</strong>, then <strong>Import to Current Tab</strong>. Select the desired profile, a <code>.json</code> file. For ususually long strings, you need to manually configure the font. Select the key, scroll down to the <strong>Font</strong> section and click <strong>Configure</strong>, click the <strong>+</strong> icon, <strong>Local Fonts</strong>, and <strong>Add (x)</strong>. Import any varient of the <a href='https://fonts.google.com/download?family=Material+Symbols+Outlined|Material+Symbols+Rounded|Material+Symbols+Sharp' rel='noopener noreferrer' target='_blank' class='inline-link'>Google Material Symbols</a> font files, click <strong>Add (x)</strong>, then <strong>OK</strong> and select that font. You can remap the keys and customize other settings as you like.",
+
+        "for_kv_mod": "For the KeyViewer Mod",
+        "for_kv_mod_desc": "Profiles designed for use with the <a href='https://github.com/modlist-org/KeyViewer' rel='noopener noreferrer' target='_blank' class='inline-link'>KeyViewer</a> mod, requires version <strong>4.9.7 to 4.10.3</strong>.</p><h3>How to Install</h3><p>Extract the downloaded zip file, launch ADOFAI and press <code>Ctrl + F10</code> (by default) to open the Unity Mod Manager panel. Open the KeyViewer mod settings and click <strong>Import Profile</strong>, then select the desired profile, a <code>.json</code> file. Now you can adjust the offset to make it appear on screen, and remap keys if needed.</p><p>Please note that these profiles are incompatible with newer versions of KeyViewer (>4.10.3) due to recent changes in the mod's code. We recommend using DM.NOTE if needed."
       }
     },
 
@@ -114,6 +127,7 @@
       "watch_demo": "Watch Demo Video",
       "song_on": " Release",
 
+      "loading": "Loading levels...",
       "load_error": "Failed to load levels, Please try again later."
     },
 

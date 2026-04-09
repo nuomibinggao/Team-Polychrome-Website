@@ -4,10 +4,16 @@
   import { toggleLang } from '$lib/i18n/toggle';
   import DOMPurify from 'dompurify';
 
+  type Person = { name: string; link: string };
+
   const levels = fetch('/data-storage/levels/levels.json').then(r => r.json());
 
   function sanitize(html: string): string {
     return DOMPurify.sanitize(html, { ALLOWED_TAGS: ['strong', 'em', 'a', 'br'] });
+  }
+
+  function getCredits(list: Array<Person | null>): Person[] {
+    return list.filter((p): p is Person => p !== null);
   }
 </script>
 
@@ -24,7 +30,6 @@
 <nav>
   <ul>
     <li><a href={resolve('/')} class='pages'>{$_('nav.back_home')}</a></li>
-
     <li><a href={null} onclick={(e) => { e.preventDefault(); toggleLang(); }} class='i18n'>简中 / EN</a></li>
   </ul>
 </nav>
@@ -36,9 +41,11 @@
     <h3>{$_('pages.about.useful_links')}</h3>
     <ul>
       <li>
+        <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
         <a href='https://space.bilibili.com/3546710827600010' rel='noopener noreferrer' target='_blank'>{$_('pages.about.channel_link')}</a>
       </li>
       <li>
+        <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
         <a href='https://tuforums.com' rel='noopener noreferrer' target='_blank'>{$_('pages.about.tuf_link')}</a>
       </li>
       <li>
@@ -59,24 +66,25 @@
           <div class='level-title-block'>
             <h2 class='level-title'>{level.title}</h2>
             <p class='level-artist'>
-              {#if level['artist-link']}
-                <a href={resolve(level['artist-link'])} rel='noopener noreferrer' target='_blank' class='inline-link'>
-                  {Array.isArray(level.artist) ? level.artist[0] : level.artist}
-                </a>
-                {#if Array.isArray(level.artist) && level.artist[1]}
-                  <span class='artist-alt'>({level.artist[1]})</span>
+              {#each level.artist as artist, i (artist.link ?? artist.name[0])}
+                {#if artist.link}
+                  <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+                  <a href={artist.link} rel='noopener noreferrer' target='_blank' class='inline-link'>{artist.name[0]}</a>
+                {:else}
+                  <span>{artist.name[0]}</span>
                 {/if}
-              {:else}
-                {Array.isArray(level.artist) ? level.artist[0] : level.artist}
-                {#if Array.isArray(level.artist) && level.artist[1]}
-                  <span class='artist-alt'>({level.artist[1]})</span>
+                {#if artist.name[1]}
+                  <span class='artist-alt'>({artist.name[1]})</span>
                 {/if}
-              {/if}
+                {#if i < level.artist.length - 1}
+                  <span class='artist-separator'>&</span>
+                {/if}
+              {/each}
             </p>
           </div>
 
           <div class='level-tags'>
-            {#if level['special-tag']}
+            {#if level['special-tag'] && level['special-tag'][0][0]}
               <span class='tag tag-special'>
                 {$locale === 'en-us' ? level['special-tag'][0][0] : level['special-tag'][1][0]}
               </span>
@@ -139,33 +147,39 @@
         {/if}
 
         <div class='level-credits'>
-          <div class='credit-group'>
-            <span class='credit-label'>{$_('pages.levels.charters')}:</span>
-            {#each level.charters as person, i (person.name)}
-              <a href={resolve(person.link)} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < level.charters.length - 1},&nbsp;{/if}
-            {/each}
-          </div>
-          {#if level.guest_charters?.filter((p: unknown) => p !== null).length}
+          {#if getCredits(level.charters).length}
+            <div class='credit-group'>
+              <span class='credit-label'>{$_('pages.levels.charters')}:</span>
+              {#each getCredits(level.charters) as person, i (person.name)}
+                <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+                <a href={person.link} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < getCredits(level.charters).length - 1},&nbsp;{/if}
+              {/each}
+            </div>
+          {/if}
+          {#if getCredits(level.guest_charters).length}
             <div class='credit-group'>
               <span class='credit-label'>{$_('pages.levels.guest_charters')}:</span>
-              {#each level.guest_charters.filter((p: unknown) => p !== null) as person, i (person.name)}
-                <a href={resolve(person.link)} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < level.guest_charters.filter((p: unknown) => p !== null).length - 1},&nbsp;{/if}
+              {#each getCredits(level.guest_charters) as person, i (person.name)}
+                <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+                <a href={person.link} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < getCredits(level.guest_charters).length - 1},&nbsp;{/if}
               {/each}
             </div>
           {/if}
-          {#if level.vfxers?.length}
+          {#if getCredits(level.vfxers).length}
             <div class='credit-group'>
               <span class='credit-label'>{$_('pages.levels.vfxers')}:</span>
-              {#each level.vfxers as person, i (person.name)}
-                <a href={resolve(person.link)} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < level.vfxers.length - 1},&nbsp;{/if}
+              {#each getCredits(level.vfxers) as person, i (person.name)}
+                <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+                <a href={person.link} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < getCredits(level.vfxers).length - 1},&nbsp;{/if}
               {/each}
             </div>
           {/if}
-          {#if level.guest_vfxers?.filter((p: unknown) => p !== null).length}
+          {#if getCredits(level.guest_vfxers).length}
             <div class='credit-group'>
               <span class='credit-label'>{$_('pages.levels.guest_vfxers')}:</span>
-              {#each level.guest_vfxers.filter((p: unknown) => p !== null) as person, i (person.name)}
-                <a href={resolve(person.link)} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < level.guest_vfxers.filter((p: unknown) => p !== null).length - 1},&nbsp;{/if}
+              {#each getCredits(level.guest_vfxers) as person, i (person.name)}
+                <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+                <a href={person.link} rel='noopener noreferrer' target='_blank' class='inline-link'>{person.name}</a>{#if i < getCredits(level.guest_vfxers).length - 1},&nbsp;{/if}
               {/each}
             </div>
           {/if}
@@ -173,13 +187,21 @@
 
         <div class='level-links'>
           {#if level['demo-video-id']}
+            <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
             <a href={`https://bilibili.com/video/${level['demo-video-id'][1]}`} rel='noopener noreferrer' target='_blank'>
               {$_('pages.levels.watch_demo')}
             </a>
           {/if}
           {#if level['song-link']}
-            <a href={resolve(level['song-link'][1])} rel='noopener noreferrer' target='_blank'>
+            <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+            <a href={level['song-link'][1]} rel='noopener noreferrer' target='_blank'>
               {level['song-link'][0]}{$_('pages.levels.song_on')}
+            </a>
+          {/if}
+          {#if level['original_rhythm_game_level_link']?.[2]}
+            <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+            <a href={level['original_rhythm_game_level_link'][2]} rel='noopener noreferrer' target='_blank'>
+              {$locale === 'en-us' ? level['original_rhythm_game_level_link'][0] : level['original_rhythm_game_level_link'][1]}
             </a>
           {/if}
         </div>
