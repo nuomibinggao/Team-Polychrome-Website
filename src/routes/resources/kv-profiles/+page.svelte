@@ -1,6 +1,6 @@
 <script>
-  import { _ } from 'svelte-i18n';
-  import { resolve, asset } from '$app/paths';
+  import { _, locale } from 'svelte-i18n';
+  import { resolve } from '$app/paths';
   import { toggleLang } from '$lib/i18n/toggle';
 </script>
 
@@ -61,7 +61,8 @@
   </div>
 
   <div class='links'>
-    <a href={asset('/data-storage/kv-files/dmn-files.zip')} download='dmn-files.zip'>{$_('pages.resources.keyviewer.details')}</a>
+    <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+    <a href={$locale === 'en-us' ? 'https://drive.google.com/file/d/1TZMVagPPPnGHGK9ukfoNyUD-rnx2bDsD/view?usp=sharing' : '#'} rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.details')}</a>
   </div>
 </section>
 
@@ -74,7 +75,8 @@
 
   <div class='links'>
     <a href='https://www.bilibili.com/video/BV1xRHZz7Eeq' rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.demo_video')}</a>
-    <a href={asset('/data-storage/kv-files/kv-files.zip')} download='kv-files.zip'>{$_('pages.resources.keyviewer.details')}</a>
+    <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+    <a href={$locale === 'en-us' ? 'https://drive.google.com/file/d/1A7M291AjppmQYhFrHSQDUf2goTSa0b1K/view?usp=sharing' : 'https://wwaxj.lanzoup.com/iDroF3mv04ub'} rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.details')}</a>
   </div>
 </section>
 
