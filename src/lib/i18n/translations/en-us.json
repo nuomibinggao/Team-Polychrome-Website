@@ -58,12 +58,12 @@
       "members_heading": "Members",
       "member_profile": "View profile for {name}",
       "members": {
-        "nuomibinggao": { "roles": "Charter & Playtester" },
-        "MLob_302":     { "roles": "Charter & Light VFX Creator" },
-        "BrAme":        { "roles": "Charter & Light VFX Creator & Original Music Producer" },
+        "nuomibinggao": { "roles": "Charter & Playtester", "aliases": ["げつじん", "こおりん", "月尘"] },
+        "MLob_302":     { "roles": "Charter & Light VFX Creator", "aliases": ["Mono_"] },
+        "BrAme":        { "roles": "Charter & Light VFX Creator & Original Music Producer", "aliases": ["BAmethyst"] },
         "MingZi":       { "roles": "Charter" },
         "llllaio":      { "roles": "VFX Creator" },
-        "Larus_":       { "roles": "VFX Creator" },
+        "Larus_":       { "roles": "VFX Creator & Original Music Producer" },
         "PoFic":        { "roles": "VFX Creator" }
       }
     },
@@ -138,6 +138,5 @@
       "back_last": "Back to Last Page",
       "back_home": "Back to Home"
     }
-
   }
 }

@@ -364,6 +364,15 @@ section .links + .content {
   overflow: hidden;
 }
 
+.member-card .aliases {
+  font-size: 0.68rem;
+  color: var(--purple-light);
+  line-height: 1.5;
+  font-weight: 300;
+  margin-top: 4px;
+  word-break: break-word;
+}
+
 .member-card::before {
   content: '';
   position: absolute;
