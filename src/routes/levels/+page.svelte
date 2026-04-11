@@ -48,9 +48,6 @@
         <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
         <a href='https://tuforums.com' rel='noopener noreferrer' target='_blank'>{$_('pages.about.tuf_link')}</a>
       </li>
-      <li>
-        <a href={null}>{$_('pages.about.join_link')}</a>
-      </li>
     </ul>
   </div>
 </section>

@@ -32,7 +32,6 @@
   <div class='links'>
     <a href={resolve('/about')}>{$_('pages.home.about.view_link')}</a>
     <a href='https://space.bilibili.com/3546710827600010' rel='noopener noreferrer' target='_blank'>{$_('pages.home.about.channel_link')}</a>
-    <a href={resolve('/')}>{$_('pages.home.about.join_link')}</a>
   </div>
 </section>
 

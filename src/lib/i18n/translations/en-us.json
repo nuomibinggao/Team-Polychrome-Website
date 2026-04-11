@@ -24,8 +24,7 @@
         "heading": "About Us",
         "text": "Information about our team and its members.",
         "view_link": "View About Us",
-        "channel_link": "Our Channel",
-        "join_link": "Join Us"
+        "channel_link": "Our Channel"
       },
       "projects": {
         "levels_heading": "Our Levels",
@@ -50,7 +49,6 @@
       "text": "Information about our team and its members.",
       "view_link": "View About Us",
       "channel_link": "Our Channel",
-      "join_link": "Join Us",
       "useful_links": "Useful Links",
       "tuf_link": "The Universal Forums (TUF)",
       "brief_heading": "Brief",
