@@ -56,7 +56,7 @@
       "members_heading": "成员",
       "member_profile": "查看{name}的主页",
       "members": {
-        "nuomibinggao": { "roles": "谱师 & 打谱测试员", "aliases": ["げつじん", "こおりん", "月尘"] },
+        "nuomibinggao": { "roles": "谱师 & 打谱测试员", "aliases": ["げつじん", "こおりん", "Lunaris Pulvis"] },
         "MLob_302":     { "roles": "谱师 & 轻特效师", "aliases": ["Mono_"] },
         "BrAme":        { "roles": "谱师 & 轻特效师 & 原创音乐创作者", "aliases": ["BAmethyst"] },
         "MingZi":       { "roles": "谱师" },
