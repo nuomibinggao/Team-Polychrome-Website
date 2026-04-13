@@ -71,10 +71,10 @@
     "id": 3,
     "artist": [
       {"name": ["takehirotei"], "link": "https://takehirotei.bandcamp.com"},
-      {"name": [" HowToPlayLN"], "link": "https://howtoplayln.bandcamp.com/"}
+      {"name": [" HowToPlayLN"], "link": "https://howtoplayln.bandcamp.com"}
     ],
     "title": "Essence",
-    "release-date": "2027",
+    "release-date": "Apr. 24, 2026",
     "special-tag": null,
     "status-tag": [["W.I.P."], ["制作中"]],
     "demo-video-id": null,
@@ -88,7 +88,10 @@
       ],
     "guest_charters": [null],
     "vfxers":
-      [null],
+      [
+        {"name": "nuomibinggao", "link": "https://space.bilibili.com/1223643343"},
+        {"name": "MingZi", "link": "https://space.bilibili.com/480281552"}
+      ],
     "guest_vfxers": [null],
     "tile-count": null,
     "bpm": 214,
