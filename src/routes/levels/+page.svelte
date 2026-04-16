@@ -91,7 +91,7 @@
                 {$locale === 'en-us' ? level['status-tag'][0][0] : level['status-tag'][1][0]}
               </span>
             {/if}
-            {#if level['demo-video-id']}
+            {#if level['demo-video-id'][1] !== null}
               <span class='tag tag-demo'>
                 {$locale === 'en-us' ? level['demo-video-id'][0][0] : level['demo-video-id'][0][1]}
               </span>
@@ -114,7 +114,7 @@
           </div>
         </div>
 
-        {#if level['demo-video-id']}
+        {#if level['demo-video-id'][1] !== null}
           <div class='level-player'>
             <iframe
               src='https://player.bilibili.com/player.html?bvid={level['demo-video-id'][1]}&autoplay=0'
@@ -183,7 +183,7 @@
         </div>
 
         <div class='level-links'>
-          {#if level['demo-video-id']}
+          {#if level['demo-video-id'][1] !== null}
             <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
             <a href={`https://bilibili.com/video/${level['demo-video-id'][1]}`} rel='noopener noreferrer' target='_blank'>
               {$_('pages.levels.watch_demo')}

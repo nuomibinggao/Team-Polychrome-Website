@@ -76,8 +76,8 @@
     "title": "Essence",
     "release-date": "Apr. 24, 2026",
     "special-tag": null,
-    "status-tag": [["W.I.P."], ["制作中"]],
-    "demo-video-id": null,
+    "status-tag": null,
+    "demo-video-id": [["Low VFX", "低特效"], null],
     "song-link": ["Soundcloud", "https://soundcloud.com/indekkusu/essence"],
     "original_rhythm_game_level_link": ["View osu!mania Beatmap", "查看osu!mania地图", "https://osu.ppy.sh/beatmapsets/1943786#mania/4021083"],
     "charters":
@@ -90,14 +90,19 @@
     "vfxers":
       [
         {"name": "nuomibinggao", "link": "https://space.bilibili.com/1223643343"},
-        {"name": "MingZi", "link": "https://space.bilibili.com/480281552"}
+        {"name": "MingZi", "link": "https://space.bilibili.com/480281552"},
+        {"name": "Mono_", "link": "https://space.bilibili.com/1125672122"}
       ],
     "guest_vfxers": [null],
-    "tile-count": null,
+    "tile-count": 10065,
     "bpm": 214,
-    "tuf-id": null,
-    "tuf-displayed-diff": null,
-    "tuf-manager-diff": null,
-    "level_desc": [null, null]
+    "tuf-id": 13265,
+    "tuf-displayed-diff": "Q3",
+    "tuf-manager-diff": "U13",
+    "level_desc":
+    [
+      "<strong>Essence</strong> is the original music for the 4DM2023 Grand Finals Tiebreaker. The level contains 6 parts, testing players' rolling, indexing, and tech skills. The whole song is 7:27 long, tesing the players' stamina.",
+      "<strong>Essence</strong>是4DM2023总决赛加赛的原创音乐。该谱面包含6个部分, 考验玩家的轮指、硬扛和不规则能力。整首歌长达7分27秒, 考验玩家的耐力。"
+    ]
   }
 ]
