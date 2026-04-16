@@ -18,6 +18,7 @@
   <link rel='icon' href={favicon} />
   <link href='https://api.fontshare.com/css?f[]=chillax@400,700&display=swap' rel='stylesheet'>
   <link href='https://chinese-fonts-cdn.deno.dev/packages/xiaolai/dist/Xiaolai/result.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
   <link rel='stylesheet' href='/stylesheet.css'>
 </svelte:head>
 
