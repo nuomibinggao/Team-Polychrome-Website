@@ -48,6 +48,10 @@
         <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
         <a href='https://tuforums.com' rel='noopener noreferrer' target='_blank'>{$_('pages.about.tuf_link')}</a>
       </li>
+      <li>
+        <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+        <a href='https://tuforums.com/packs/ImTMSid6' rel='noopener noreferrer' target='_blank'>{$_('pages.about.tuf_pack_link')}</a>
+      </li>
     </ul>
   </div>
 </section>
