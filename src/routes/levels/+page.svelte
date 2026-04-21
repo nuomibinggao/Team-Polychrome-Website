@@ -6,7 +6,11 @@
 
   type Person = { name: string; link: string };
 
-  const levels = fetch('/data-storage/levels/levels.json').then(r => r.json());
+  const levels = fetch('https://api.melty-studios.com/get/team-plcr-website/leveldata')
+    .then(r => {
+      if (!r.ok) throw new Error(`HTTP error ${r.status}`);
+      return r.json();
+    });
 
   function sanitize(html: string): string {
     return DOMPurify.sanitize(html, { ALLOWED_TAGS: ['strong', 'em', 'a', 'br'] });
@@ -102,14 +106,14 @@
             {/if}
             {#if level['tuf-displayed-diff']}
               <img
-                src='https://api.tuforums.com/v2/media/image/icon/{level['tuf-displayed-diff']}.png'
+                src={level['tuf-displayed-diff-link']}
                 alt={level['tuf-displayed-diff']}
                 class='tuf-diff-icon'
               />
               {#if level['tuf-manager-diff']}
                 <span class='tuf-diff-slash'>/</span>
                 <img
-                  src='https://api.tuforums.com/v2/media/image/icon/{level['tuf-manager-diff']}.png'
+                  src={level['tuf-manager-diff-link']}
                   alt={level['tuf-manager-diff']}
                   class='tuf-diff-icon'
                 />

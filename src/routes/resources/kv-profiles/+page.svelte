@@ -1,5 +1,5 @@
 <script>
-  import { _, locale } from 'svelte-i18n';
+  import { _ } from 'svelte-i18n';
   import { resolve } from '$app/paths';
   import { toggleLang } from '$lib/i18n/toggle';
 </script>
@@ -62,7 +62,7 @@
 
   <div class='links'>
     <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-    <a href={$locale === 'en-us' ? 'https://drive.google.com/file/d/1TZMVagPPPnGHGK9ukfoNyUD-rnx2bDsD/view?usp=sharing' : 'https://www.123865.com/s/HUz5jv-ZqG93'} rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.details')}</a>
+    <a href='https://api.melty-studios.com/cdn/team-plcr-website/kv-files/dmn-files.zip' rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.details')}</a>
   </div>
 </section>
 
@@ -76,7 +76,7 @@
   <div class='links'>
     <a href='https://www.bilibili.com/video/BV1xRHZz7Eeq' rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.demo_video')}</a>
     <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-    <a href={$locale === 'en-us' ? 'https://drive.google.com/file/d/1A7M291AjppmQYhFrHSQDUf2goTSa0b1K/view?usp=sharing' : 'https://www.123865.com/s/HUz5jv-bqG93'} rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.details')}</a>
+    <a href='https://api.melty-studios.com/cdn/team-plcr-website/kv-files/kv-files.zip' rel='noopener noreferrer' target='_blank'>{$_('pages.resources.keyviewer.details')}</a>
   </div>
 </section>
 
